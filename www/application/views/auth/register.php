@@ -1,4 +1,4 @@
-<div class="content-box blog-page-box">
+<div class="content-box">
     <h1>Start your eSnail.ca account</h1>
 
     <form action="/auth/register" method="post">

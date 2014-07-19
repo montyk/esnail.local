@@ -34,7 +34,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            Remember my credentials <input type="checkbox" id="remember" name="remember"/>
+                            <label for="remember">Remember my credentials </label> <input type="checkbox" id="remember" name="remember"/>
                         </td>
                     </tr>
                     <tr>

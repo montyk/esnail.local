@@ -1,8 +1,8 @@
 <div class="content-box support-page-box">
     <h1>Support</h1>
     <p>You're our client and we value our business!</p>
-    <p>Curious about our service? Check out the <a href="/faq/">Frequently Asked Questions.</a></p>
-    <p>Would you like specifics about one of the features of the eSnail.ca plan? Please see our <a href="/plans/">Plans</a> plage.</p>
+    <p>Curious about our service? Check out the <a href="/faq.html">Frequently Asked Questions.</a></p>
+    <p>Would you like specifics about one of the features of the eSnail.ca plan? Please see our <a href="/plans.html">Plans</a> plage.</p>
 
 </div>
 

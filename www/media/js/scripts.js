@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $('a[data-remote]').on('click', function (e) {
+    $('body').on('click', 'a[data-remote]', function (e) {
+        window.scroll(0, 0);
         e.preventDefault();
 
         $('#menu .tab').closest('li').removeClass('active-link')
@@ -15,13 +16,6 @@ $(document).ready(function () {
         });
     });
 
-    $('.content .wrapper').on('click', 'a[data-remote]', function (e) {
-        e.preventDefault();
-        var url = $(this).attr('href').replace('.html', '.ajax')
-        $.get(url, function (data) {
-            $('.content .wrapper .addition').html(data)
-        });
-    });
 
     function goToByScroll(id) {
         $('html,body').animate({scrollTop: $("#" + id).offset().top}, 'slow');

@@ -4,7 +4,9 @@ class Model_User extends ORM
 {
 
     protected $_has_many = array(
-        'mails' => array()
+        'mails' => array(),
+        'user_tokens' => array('model' => 'user_token'),
+        'roles' => array('model' => 'role', 'through' => 'roles_users'),
     );
 
     public function rules()
@@ -87,12 +89,22 @@ class Model_User extends ORM
             unset($values['password'], $values['password_confirm']);
         }
 
+
         $extra_validation = Model_User::get_password_validation($values);
         return $this->values($values, $expected)->update($extra_validation);
     }
 
-    public function trigger()
+    public function trigger_block()
     {
         return ($this->blocked) ? $this->set('blocked', 0)->update() : $this->set('blocked', 1)->update();
+    }
+
+    public function trigger_admin()
+    {
+        if ($this->roles->where('name', '=', 'admin')->find()->loaded()) {
+            return $this->remove('roles', ORM::factory('role', array('name' => 'admin')));
+        } else {
+            return $this->add('roles', ORM::factory('role', array('name' => 'admin')));
+        }
     }
 }

@@ -21,8 +21,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Manager Mode</a></li>
-                        <li><a href="#">Client Mode</a></li>
+                        <li><a href="/client/">Client Mode</a></li>
                         <li class="divider"></li>
                         <li><a href="#">Exit</a></li>
                     </ul>

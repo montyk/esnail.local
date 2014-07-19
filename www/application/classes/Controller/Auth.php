@@ -19,9 +19,6 @@ class Controller_Auth extends Controller_Layout
     public function action_register()
     {
         if (HTTP_Request::POST == $this->request->method()) {
-
-            var_dump(ORM::factory('role', array('name' => 'login')));
-            exit;
             try {
                 $post = $this->request->post();
                 $post['username'] = $post['email'];
@@ -37,11 +34,8 @@ class Controller_Auth extends Controller_Layout
                     Controller::redirect('client/mail');
                 }
             } catch (ORM_Validation_Exception $e) {
-                var_dump($e->errors('models'));
-                exit;
-
-//                $this->alert['message'] = 'There were errors, please see form below';
-//                $this->alert['errors'] = $e->errors('models');
+                $this->alert['message'] = 'There were errors, please see form below';
+                $this->alert['errors'] = $e->errors('models');
             }
         }
         $this->template->content = View::factory('auth/register');
@@ -50,9 +44,7 @@ class Controller_Auth extends Controller_Layout
     public function action_logout()
     {
         if (Auth::instance()->logout()) {
-            return $this->request->redirect('member/login');
-        } else {
-            echo 'fail logout';
+            Controller::redirect('/');
         }
     }
 }

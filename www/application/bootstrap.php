@@ -134,13 +134,6 @@ Cookie::$salt = '1dHG6&4r@)J';
  * defaults for the URI.
  */
 
-Route::set('page', '(<action>(.<extension>))')
-    ->defaults(array(
-        'controller' => 'page',
-        'action' => 'index',
-        'extension' => '(html|ajax)'
-    ));
-
 Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))')
     ->defaults(array(
         'directory' => 'admin',
@@ -153,6 +146,13 @@ Route::set('client', 'client(/<controller>(/<action>(/<id>)))')
         'directory' => 'client',
         'controller' => 'mail',
         'action'     => 'index',
+    ));
+
+Route::set('page', '(<action>(.<extension>))')
+    ->defaults(array(
+        'controller' => 'page',
+        'action' => 'index',
+        'extension' => '(html|ajax)'
     ));
 
 Route::set('default', '(<controller>(/<action>(/<id>)))')

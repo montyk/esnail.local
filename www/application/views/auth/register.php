@@ -1,18 +1,11 @@
-<?php
-function curPlan($planNr)
-{
-    $plan = isset($_GET['plan']) ? $_GET['plan'] : 1;
-    if ($planNr == $plan) echo 'selected="selected"';
-}
-
-?>
 <div class="content-box blog-page-box">
     <h1>Start your eSnail.ca account</h1>
 
     <form action="/auth/register" method="post">
         <table id="register-table">
             <tr>
-                <td colspan="2" class="subsectionTitle">We would like to get to know you!</td>
+                <td colspan="3" class="subsectionTitle">We would like to get to know you!</td>
+            </tr>
             <tr>
                 <td><label for="firstName">First Name: </label></td>
                 <td><input type="text" name="firstname" id="firstname"/></td>
@@ -24,7 +17,7 @@ function curPlan($planNr)
                 <td class="td-check" id="lastname-check"></td>
             </tr>
             <tr>
-                <td colspan="2" class="subsectionTitle">Your login details.</td>
+                <td colspan="3" class="subsectionTitle">Your login details.</td>
             <tr>
             <tr>
                 <td><label for="email">E-mail: </label></td>
@@ -47,7 +40,7 @@ function curPlan($planNr)
                 <td class="td-check" id="cpass-check"></td>
             </tr>
             <tr>
-                <td colspan="2" class="subsectionTitle">At eSnail we like to Save you Money, did you grab a promotional
+                <td colspan="3" class="subsectionTitle">At eSnail we like to Save you Money, did you grab a promotional
                     code?
                 </td>
             </tr>
@@ -56,21 +49,21 @@ function curPlan($planNr)
                 <td><input type="text" name="promo" id="promo"/></td>
             </tr>
             <tr>
-                <td class="subsectionTitle">
-                    <input type="checkbox" name="tos" id="tos"/><label for="tos">I have read and understood the</label>
-                    <a href="/pages/legal" data-remote="true">Terms of Service.</a>
+                <td class="subsectionTitle" colspan="3">
+                    By clicking Sign Up button I confirm, that I have read and understood the
+                    <a href="/legal.html" data-remote="true">Terms of Service.</a>
                 </td>
                 <td class="td-check" id="tos-check"></td>
             </tr>
             <tr class="registerStep2">
-                <td colspan="2" class="subsectionTitle">
+                <td colspan="3" class="subsectionTitle">
                     Everything checks out so far!<br/>
                     <label for="plan">Choose the service plan.</label>
                 </td>
             </tr>
             <tr>
-                <td class="subsectionTitle">
-                    <input type="submit" id="nextStep" value="Sign Up!" class="order-button"/>
+                <td class="subsectionTitle" colspan="3" >
+                    <input type="submit" value="Sign Up" class="order-button"/>
                 </td>
             </tr>
         </table>

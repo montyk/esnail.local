@@ -124,3 +124,105 @@
 2014-07-19 04:25:50 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected T_VARIABLE, expecting T_STRING ~ APPPATH\classes\Controller\Auth.php [ 2 ] in file:line
 2014-07-19 04:25:50 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in file:line
+2014-07-19 12:36:40 --- CRITICAL: Kohana_Exception [ 0 ]: The firsname property does not exist in the Model_User class ~ MODPATH\orm\classes\Kohana\ORM.php [ 687 ] in Z:\home\esnail.local\www\modules\orm\classes\Kohana\ORM.php:603
+2014-07-19 12:36:40 --- DEBUG: #0 Z:\home\esnail.local\www\modules\orm\classes\Kohana\ORM.php(603): Kohana_ORM->get('firsname')
+#1 Z:\home\esnail.local\www\application\views\admin\user\index.php(19): Kohana_ORM->__get('firsname')
+#2 Z:\home\esnail.local\www\system\classes\Kohana\View.php(61): include('Z:\home\esnail....')
+#3 Z:\home\esnail.local\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\esnail....', Array)
+#4 Z:\home\esnail.local\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#5 Z:\home\esnail.local\www\application\views\admin.php(21): Kohana_View->__toString()
+#6 Z:\home\esnail.local\www\system\classes\Kohana\View.php(61): include('Z:\home\esnail....')
+#7 Z:\home\esnail.local\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\esnail....', Array)
+#8 Z:\home\esnail.local\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#9 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_User))
+#12 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#14 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#15 {main} in Z:\home\esnail.local\www\modules\orm\classes\Kohana\ORM.php:603
+2014-07-19 12:57:36 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected ')' ~ APPPATH\views\admin\user\index.php [ 27 ] in file:line
+2014-07-19 12:57:36 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-07-19 13:00:42 --- CRITICAL: ErrorException [ 2 ]: Wrong parameter count for var_dump() ~ APPPATH\views\admin\user\index.php [ 27 ] in file:line
+2014-07-19 13:00:42 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'Wrong parameter...', 'Z:\home\esnail....', 27, Array)
+#1 Z:\home\esnail.local\www\application\views\admin\user\index.php(27): var_dump()
+#2 Z:\home\esnail.local\www\system\classes\Kohana\View.php(61): include('Z:\home\esnail....')
+#3 Z:\home\esnail.local\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\esnail....', Array)
+#4 Z:\home\esnail.local\www\system\classes\Kohana\View.php(228): Kohana_View->render()
+#5 Z:\home\esnail.local\www\application\views\admin.php(21): Kohana_View->__toString()
+#6 Z:\home\esnail.local\www\system\classes\Kohana\View.php(61): include('Z:\home\esnail....')
+#7 Z:\home\esnail.local\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\esnail....', Array)
+#8 Z:\home\esnail.local\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#9 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#10 [internal function]: Kohana_Controller->execute()
+#11 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_User))
+#12 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#13 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#14 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#15 {main} in file:line
+2014-07-19 13:13:21 --- CRITICAL: ErrorException [ 8 ]: Undefined property: Controller_Admin_User::$roles ~ APPPATH\classes\Controller\Admin\User.php [ 21 ] in Z:\home\esnail.local\www\application\classes\Controller\Admin\User.php:21
+2014-07-19 13:13:21 --- DEBUG: #0 Z:\home\esnail.local\www\application\classes\Controller\Admin\User.php(21): Kohana_Core::error_handler(8, 'Undefined prope...', 'Z:\home\esnail....', 21, Array)
+#1 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Admin_User->action_admin()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_User))
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#7 {main} in Z:\home\esnail.local\www\application\classes\Controller\Admin\User.php:21
+2014-07-19 13:14:57 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: content ~ APPPATH\views\admin.php [ 21 ] in Z:\home\esnail.local\www\application\views\admin.php:21
+2014-07-19 13:14:57 --- DEBUG: #0 Z:\home\esnail.local\www\application\views\admin.php(21): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\esnail....', 21, Array)
+#1 Z:\home\esnail.local\www\system\classes\Kohana\View.php(61): include('Z:\home\esnail....')
+#2 Z:\home\esnail.local\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\esnail....', Array)
+#3 Z:\home\esnail.local\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#5 [internal function]: Kohana_Controller->execute()
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_User))
+#7 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#9 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#10 {main} in Z:\home\esnail.local\www\application\views\admin.php:21
+2014-07-19 13:15:15 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: content ~ APPPATH\views\admin.php [ 21 ] in Z:\home\esnail.local\www\application\views\admin.php:21
+2014-07-19 13:15:15 --- DEBUG: #0 Z:\home\esnail.local\www\application\views\admin.php(21): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\esnail....', 21, Array)
+#1 Z:\home\esnail.local\www\system\classes\Kohana\View.php(61): include('Z:\home\esnail....')
+#2 Z:\home\esnail.local\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\esnail....', Array)
+#3 Z:\home\esnail.local\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#5 [internal function]: Kohana_Controller->execute()
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_User))
+#7 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#9 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#10 {main} in Z:\home\esnail.local\www\application\views\admin.php:21
+2014-07-19 13:15:21 --- CRITICAL: ErrorException [ 8 ]: Undefined variable: content ~ APPPATH\views\admin.php [ 21 ] in Z:\home\esnail.local\www\application\views\admin.php:21
+2014-07-19 13:15:21 --- DEBUG: #0 Z:\home\esnail.local\www\application\views\admin.php(21): Kohana_Core::error_handler(8, 'Undefined varia...', 'Z:\home\esnail....', 21, Array)
+#1 Z:\home\esnail.local\www\system\classes\Kohana\View.php(61): include('Z:\home\esnail....')
+#2 Z:\home\esnail.local\www\system\classes\Kohana\View.php(348): Kohana_View::capture('Z:\home\esnail....', Array)
+#3 Z:\home\esnail.local\www\system\classes\Kohana\Controller\Template.php(44): Kohana_View->render()
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(87): Kohana_Controller_Template->after()
+#5 [internal function]: Kohana_Controller->execute()
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_User))
+#7 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#8 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#9 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#10 {main} in Z:\home\esnail.local\www\application\views\admin.php:21
+2014-07-19 14:31:57 --- CRITICAL: Kohana_Exception [ 0 ]: Cannot update user model because it is not loaded. ~ MODPATH\orm\classes\Kohana\ORM.php [ 1357 ] in Z:\home\esnail.local\www\application\classes\Model\User.php:94
+2014-07-19 14:31:57 --- DEBUG: #0 Z:\home\esnail.local\www\application\classes\Model\User.php(94): Kohana_ORM->update(Object(Validation))
+#1 Z:\home\esnail.local\www\application\classes\Controller\Admin\User.php(71): Model_User->update_user(Array, Array)
+#2 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Admin_User->action_update()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_User))
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#8 {main} in Z:\home\esnail.local\www\application\classes\Model\User.php:94
+2014-07-19 14:38:27 --- CRITICAL: ErrorException [ 2 ]: Missing argument 1 for Kohana_ORM::remove(), called in Z:\home\esnail.local\www\application\classes\Controller\Admin\User.php on line 29 and defined ~ MODPATH\orm\classes\Kohana\ORM.php [ 1598 ] in Z:\home\esnail.local\www\modules\orm\classes\Kohana\ORM.php:1598
+2014-07-19 14:38:27 --- DEBUG: #0 Z:\home\esnail.local\www\modules\orm\classes\Kohana\ORM.php(1598): Kohana_Core::error_handler(2, 'Missing argumen...', 'Z:\home\esnail....', 1598, Array)
+#1 Z:\home\esnail.local\www\application\classes\Controller\Admin\User.php(29): Kohana_ORM->remove()
+#2 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Admin_User->action_delete()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_User))
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#8 {main} in Z:\home\esnail.local\www\modules\orm\classes\Kohana\ORM.php:1598

@@ -4,6 +4,9 @@
         public $template = 'admin';
 
         public function before() {
+            if (!Auth::instance()->logged_in('admin')) {
+                Controller::redirect('/');
+            }
             if ($this->request->param('extension') == 'ajax') {
                 $this->template = 'ajax';
                 parent::before();

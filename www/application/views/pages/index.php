@@ -62,25 +62,28 @@
         <h1>What if...</h1>
 
         <div class="faq-home-box content-box">
-
-            <h2>...I want to receive magazines by eSnail?</h2>
-            <p>
-                No problem! If you would like to subscribe to a magazine using your eSnail Box we will notify you when
-                you have mail and either forward it to you for a $5 forwarding fee, or colour scan it for you for only
-                $1.50 Please note that scanning the magazine will destroy the bindings.
-            </p>
-
-            <h2>...I move or travel?</h2>
-            <p>
-                You receive mail addressed to your eSnail account wherever you have access to the internet. Your account
-                goes wherever you go!
-            </p>
-
-            <h2>...I receive junkmail?</h2>
-            <p>
-                Because our scanning process is automated, we will scan and email all mail that is addressed under the
-                name you registered with eSnail.ca This may include fliers and lettermail.
-            </p>
+        	<div class="content-box-item">
+	            <h2>...I want to receive magazines by eSnail?</h2>
+	            <p>
+	                No problem! If you would like to subscribe to a magazine using your eSnail Box we will notify you when
+	                you have mail and either forward it to you for a $5 forwarding fee, or colour scan it for you for only
+	                $1.50 Please note that scanning the magazine will destroy the bindings.
+	            </p>
+	        </div>
+        	<div class="content-box-item">
+	            <h2>...I move or travel?</h2>
+	            <p>
+	                You receive mail addressed to your eSnail account wherever you have access to the internet. Your account
+	                goes wherever you go!
+	            </p>
+	        </div>
+        	<div class="content-box-item">
+	            <h2>...I receive junkmail?</h2>
+	            <p>
+	                Because our scanning process is automated, we will scan and email all mail that is addressed under the
+	                name you registered with eSnail.ca This may include fliers and lettermail.
+	            </p>
+	        </div>
         </div>
         <div class="see-all nivo-caption">
             <a href="/faq.html" data-remote="true">More Frequently Asked Questions</a>
@@ -96,15 +99,16 @@
                 <div class="entries-single">
                     <div class="single-entry-date">
                         <h2><?php echo $news->title; ?></h2>
+                        August 12<sup>th</sup>, 2013
                         <? //=$n->date_month.' '.$n->date_day.'<sup>'.$n->date_suffix.'</sup>, '.$n->date_year;?>
                     </div>
 
-                    <?php echo $news->excerpt; ?><p class="entries-link-more"><a href="/blog.html">Read more</a></p>
+                    <?php echo $news->excerpt; ?><p class="entries-link-more"><a data-remote="true" href="/blog.html">Read more</a></p>
                 </div>
             <?php endforeach; ?>
         </div>
         <div class="see-all nivo-caption">
-            <a href="/blog.html" data-remote="true">More blog entrie</a>
+            <a href="/blog.html" data-remote="true">More blog entries</a>
         </div>
     </div>
 
@@ -113,27 +117,27 @@
 <div class="right">
     <div class="plans-container container">
         <div class="plans-box content-box">
-
-            <h2>Basic Plan</h2>
-            <ul>
-                <li>Pay a fixed amount per month. Searchable PDF.</li>
-                <li>20 pieces of mail per month</li>
-                <li>9.99$ / month</li>
-            </ul>
-            <a href="/register/?plan=2" class="order-button">Order Now</a>
-
-            <h2>Personal Plan</h2>
-            <ul>
-                <li>Pay a fixed amount per month. Searchable PDF.</li>
-                <li>100 pieces of mail per month</li>
-                <li>19.99$ / month</li>
-            </ul>
-            <a href="/register/?plan=3" class="order-button">Order Now</a>
-
-            <p>&nbsp;</p>
+        	<div class="content-box-item">
+	            <h2>Basic Plan</h2>
+	            <ul>
+	                <li>Pay a fixed amount per month. Searchable PDF.</li>
+	                <li>20 pieces of mail per month</li>
+	                <li>9.99$ / month</li>
+	            </ul>
+	            <a href="/register/?plan=2" class="order-button">Order Now</a>
+	        </div>
+	        <div class="content-box-item">
+	            <h2>Personal Plan</h2>
+	            <ul>
+	                <li>Pay a fixed amount per month. Searchable PDF.</li>
+	                <li>100 pieces of mail per month</li>
+	                <li>19.99$ / month</li>
+	            </ul>
+	            <a href="/register/?plan=3" class="order-button">Order Now</a>
+	        </div>
         </div>
         <div class="see-all nivo-caption">
-            <a href="/plans/">More plans and services</a>
+            <a href="/plans.html" data-remote='true'>More plans and services</a>
         </div>
     </div>
     <div class="content-box paypal-box">

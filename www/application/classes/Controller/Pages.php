@@ -44,6 +44,15 @@ class Controller_Pages extends Controller_Layout {
     public function action_register() {
         $this->template->content = View::factory('pages/register');
     }
+
+    public function action_testimonials() {
+        $this->template->content = View::factory('pages/testimonials');
+    }
+
+    public function action_blog() {
+        $this->template->content = View::factory('pages/blog');
+    }
+
 }
 
 

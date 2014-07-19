@@ -13,7 +13,7 @@
     <form action="/login/help/" method="post">
         <div id="supportMessage">
             <label for="message">Message</label>
-            <textarea cols="80" rows="5" name="message" id="message"></textarea>
+            <textarea cols="70" rows="5" name="message" id="message"></textarea>
             <br />
             <input type="submit" value="Send message" class="order-button" />
         </div>

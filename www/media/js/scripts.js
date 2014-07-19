@@ -28,8 +28,6 @@ $(document).ready(function () {
     }
 
     $(document).ready(function () {
-
-
         $(".testimonials-table tr").hover(
             function () {
                 var imgobj = $(this).find('img');
@@ -40,7 +38,8 @@ $(document).ready(function () {
                 var imgobj = $(this).find('img');
                 var imgid = imgobj.attr('id');
                 imgobj.attr('src', '/media/images/testimonials/' + imgid + '0.jpg');
-            });
+            }
+        );
 
     });
 });

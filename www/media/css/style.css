@@ -1,8 +1,30 @@
 html, body {min-height: 100%;}
 * {font-family: 'Droid Serif', Tahoma, Arial, sans-serif;}
-body { background: #375d81; background-image: linear-gradient(bottom, rgb(28, 48, 65) 0%, rgb(55, 93, 129) 64%); background-image: -o-linear-gradient(bottom, rgb(28, 48, 65) 0%, rgb(55, 93, 129) 64%); background-image: -moz-linear-gradient(bottom, rgb(28, 48, 65) 0%, rgb(55, 93, 129) 64%); background-image: -webkit-linear-gradient(bottom, rgb(28, 48, 65) 0%, rgb(55, 93, 129) 64%); background-image: -ms-linear-gradient(bottom, rgb(28, 48, 65) 0%, rgb(55, 93, 129) 64%); background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(28, 48, 65)), color-stop(0.64, rgb(55, 93, 129))); font-family: 'Droid Serif', Tahoma, Arial, sans-serif; font-size: 14px; letter-spacing: .2px; }
+body { color: #002344; background: #375d81; background-image: linear-gradient(bottom, rgb(28, 48, 65) 0%, rgb(55, 93, 129) 64%); background-image: -o-linear-gradient(bottom, rgb(28, 48, 65) 0%, rgb(55, 93, 129) 64%); background-image: -moz-linear-gradient(bottom, rgb(28, 48, 65) 0%, rgb(55, 93, 129) 64%); background-image: -webkit-linear-gradient(bottom, rgb(28, 48, 65) 0%, rgb(55, 93, 129) 64%); background-image: -ms-linear-gradient(bottom, rgb(28, 48, 65) 0%, rgb(55, 93, 129) 64%); background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(28, 48, 65)), color-stop(0.64, rgb(55, 93, 129))); font-family: 'Droid Serif', Tahoma, Arial, sans-serif; font-size: 14px; letter-spacing: .2px; }
 h1 { font-weight: bold; font-size: 26px; color: #002344; }
-.container h2 { font-weight: bold; font-size: 16px; margin: 15px 0; }
+.plans-container .content-box { margin: 0 0 84px; }
+.plans-container .content-box-item { margin-bottom: 10px; }
+.plans-container .content-box-item h2 { font-weight: bold; font-size: 20px; margin: 0 0 15px; }
+.plans-container .content-box-item ul { list-style-type: circle; list-style-position: outside; padding-left: 21px; margin: 0 0 10px 0; }
+.plans-container .content-box-item ul li { margin-top: 7px;  font-size: 12px; line-height: 14px; }
+.content-box.paypal-box { text-align: center; }
+.content-box.paypal-box img { width: 182px; height: 100px; }
+.container .content-box.faq-home-box { padding-bottom: 27px; }
+.faq-home-box .content-box-item { border-bottom: 1px solid; }
+.faq-home-box .content-box-item:last-child { border-bottom: 0 none; }
+.faq-home-box .content-box-item h2 { font-size: 16px; font-weight: bold; margin: 15px 0; }
+.faq-home-box .content-box-item p { font-size: 13px; line-height: 1.5; margin-bottom: 15px; }
+
+.entries-single { padding: 15px 0; clear: both;  overflow: hidden; border: 1px solid #999;border-radius: 3px;box-shadow: 0 1px 5px 0 #4a4a4a;margin-bottom: 20px;}
+.entries-container .entries-single {border: 0 none; border-bottom: 1px solid; box-shadow: none; margin:0; }
+.entries-single:last-child { border-bottom: 0 none; }
+.entries-container .entries-single p { font-size: 13px; line-height: 1.5; }
+.entries-single .entries-link-more a { text-decoration: none; }
+.entries-single .entries-link-more a:hover { text-decoration: underline; }
+.entries-single .single-entry-date { float: left; height: 100px; width: 180px; margin-right: 10px; text-align: right; font-size: 12px; }
+.entries-single .single-entry-date h2 { font-size: 16px; font-weight: bold; margin: 15px 0; }
+
+.container h1 { margin-top: 40px; }
 strong {font-weight: bold;}
 a {outline: none;}
 .wrapper { width: 960px; margin: 0 auto; overflow: hidden; }
@@ -61,13 +83,13 @@ table.how td.text {vertical-align: top;}
 table.how td.number { width: 3%; font-size: 22px; font-weight: bold; text-align: center; }
 .right { float: right; margin-top: 10px; width: 300px; }
 .left { float: left; width: 640px; }
-.testimonials-box {padding: 0;}
+.container .content-box.testimonials-box {padding: 0 0 27px;}
 .process-container { width: 630px; margin-bottom: 80px; }
 .slider-caption {display: none;}
 .theme-default #process { margin: 10px auto 0 auto; border: 1px solid #999; border-radius: 5px; width: 630px; /* Make sure your images are the same size */ height: 330px; /* Make sure your images are the same size */ }
 .testimonials-table tr:hover td {background: #EFF2FD;}
 .testimonials-table tr:last-child td a { color: #fff; text-decoration: none; display: block; }
-.testimonials-table td { vertical-align: top; padding: 10px; }
+.testimonials-table td { vertical-align: top; padding: 10px; cursor: default; }
 .testimonials-table td h2 { font-weight: bold; font-size: 15px; margin-left: 0; margin-bottom: 15px; }
 .testimonials-table td p {line-height: 1.3;}
 .container {position: relative;}
@@ -134,3 +156,8 @@ h3.allCaps { text-transform: uppercase; font-size: 15px; font-weight: bold; padd
 #footer-links li:last-child {border: 0 none;}
 #footer-links a { color: #f8f8f8; text-decoration: none; }
 #footer-links a:hover { text-decoration: underline; color: #fff; }
+
+.plans-page-box, .faq-page-box, .security-page-box, .about-page-box, .privacy-page-box, .how-page-box, .blog-page-box, .support-page-box { padding: 10px; margin: 20px 0;}
+
+.single-entry-text { float: right;width: 740px;}
+.single-entry-text p { font-family: 'Droid Serif',​ Tahoma, ​Arial,​ sans-serif; line-height:24px; padding: 10px;}

@@ -6,13 +6,14 @@ function curPlan($planNr)
 }
 
 ?>
-<div class="content-box blog-page-box">
+<div class="content-box">
     <h1>Start your eSnail.ca account</h1>
 
     <form action="/auth/register" method="post">
         <table id="register-table">
             <tr>
                 <td colspan="2" class="subsectionTitle">We would like to get to know you!</td>
+            </tr>
             <tr>
                 <td><label for="firstName">First Name: </label></td>
                 <td><input type="text" name="firstname" id="firstname"/></td>

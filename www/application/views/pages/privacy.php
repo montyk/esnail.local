@@ -32,7 +32,7 @@
     <p>We are in compliance with the requirements of COPPA (Childrens Online Privacy Protection Act), we do not collect any information from anyone under 13 years of age. Our website, products and services are all directed to people who are at least 13 years old or older.</p>
 
     <h3>Terms and Conditions</h3>
-    <p>Please also visit our Terms and Conditions section establishing the use, disclaimers, and limitations of liability governing the use of our website at <a href="/legal/">http://www.esnail.ca/legal/</a></p>
+    <p>Please also visit our Terms and Conditions section establishing the use, disclaimers, and limitations of liability governing the use of our website at <a href="/legal.html">http://www.esnail.ca/legal.html</a></p>
 
     <h3>Your Consent</h3>
     <p>By using our site, you consent to our privacy policy.</p>

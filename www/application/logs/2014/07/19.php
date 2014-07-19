@@ -124,3 +124,36 @@
 2014-07-19 04:25:50 --- CRITICAL: ErrorException [ 4 ]: syntax error, unexpected T_VARIABLE, expecting T_STRING ~ APPPATH\classes\Controller\Auth.php [ 2 ] in file:line
 2014-07-19 04:25:50 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
 #1 {main} in file:line
+2014-07-19 16:01:37 --- CRITICAL: View_Exception [ 0 ]: The requested view pages/register could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in Z:\home\esnail.local\www\system\classes\Kohana\View.php:137
+2014-07-19 16:01:37 --- DEBUG: #0 Z:\home\esnail.local\www\system\classes\Kohana\View.php(137): Kohana_View->set_filename('pages/register')
+#1 Z:\home\esnail.local\www\system\classes\Kohana\View.php(30): Kohana_View->__construct('pages/register', NULL)
+#2 Z:\home\esnail.local\www\application\classes\Controller\Page.php(45): Kohana_View::factory('pages/register')
+#3 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Page->action_register()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Page))
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#9 {main} in Z:\home\esnail.local\www\system\classes\Kohana\View.php:137
+2014-07-19 17:26:39 --- CRITICAL: View_Exception [ 0 ]: The requested view pages/register could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in Z:\home\esnail.local\www\system\classes\Kohana\View.php:137
+2014-07-19 17:26:39 --- DEBUG: #0 Z:\home\esnail.local\www\system\classes\Kohana\View.php(137): Kohana_View->set_filename('pages/register')
+#1 Z:\home\esnail.local\www\system\classes\Kohana\View.php(30): Kohana_View->__construct('pages/register', NULL)
+#2 Z:\home\esnail.local\www\application\classes\Controller\Page.php(45): Kohana_View::factory('pages/register')
+#3 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Page->action_register()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Page))
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#9 {main} in Z:\home\esnail.local\www\system\classes\Kohana\View.php:137
+2014-07-19 17:27:23 --- CRITICAL: View_Exception [ 0 ]: The requested view pages/register could not be found ~ SYSPATH\classes\Kohana\View.php [ 257 ] in Z:\home\esnail.local\www\system\classes\Kohana\View.php:137
+2014-07-19 17:27:23 --- DEBUG: #0 Z:\home\esnail.local\www\system\classes\Kohana\View.php(137): Kohana_View->set_filename('pages/register')
+#1 Z:\home\esnail.local\www\system\classes\Kohana\View.php(30): Kohana_View->__construct('pages/register', NULL)
+#2 Z:\home\esnail.local\www\application\classes\Controller\Page.php(45): Kohana_View::factory('pages/register')
+#3 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Page->action_register()
+#4 [internal function]: Kohana_Controller->execute()
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Page))
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#7 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#8 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#9 {main} in Z:\home\esnail.local\www\system\classes\Kohana\View.php:137

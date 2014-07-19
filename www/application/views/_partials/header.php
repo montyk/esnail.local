@@ -2,7 +2,7 @@
     <div class="wrapper">
         <ul class="topbar-items">
             <li id="login-button"><a href="#login-box">Existing user?</a></li>
-            <li id="register-button"><a href="/register.html" data-remote="true">Try it for free! Register now!</a></li>
+            <li id="register-button"><a href="/auth/register">Try it for free! Register now!</a></li>
         </ul>
     </div>
 </div>
@@ -14,7 +14,7 @@
         </div>
 
         <div class="login-box" id="login-box">
-            <form action="/login.html" method="POST" name="login">
+            <form action="/auth/login" method="POST">
                 <table class="login-table" border="0" cellspacing="0" cellpadding="0">
                     <tr>
                         <td>

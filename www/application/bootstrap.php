@@ -133,9 +133,30 @@ Cookie::$salt = '1dHG6&4r@)J';
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
-Route::set('pages', '(<action>(.<extension>))')
+
+Route::set('page', '(<action>(.<extension>))')
     ->defaults(array(
-        'controller' => 'pages',
+        'controller' => 'page',
         'action' => 'index',
         'extension' => '(html|ajax)'
+    ));
+
+Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))')
+    ->defaults(array(
+        'directory' => 'admin',
+        'controller' => 'user',
+        'action'     => 'index',
+    ));
+
+Route::set('client', 'client(/<controller>(/<action>(/<id>)))')
+    ->defaults(array(
+        'directory' => 'client',
+        'controller' => 'mail',
+        'action'     => 'index',
+    ));
+
+Route::set('default', '(<controller>(/<action>(/<id>)))')
+    ->defaults(array(
+        'controller' => 'auth',
+        'action'     => 'login'
     ));

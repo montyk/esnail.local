@@ -165,16 +165,28 @@ h3.allCaps { text-transform: uppercase; font-size: 15px; font-weight: bold; padd
 .filter li.active a { color: #002344; text-decoration: none; }
 .filter li:hover a { color: #002344;}
 .table-hover { width: 98%; vertical-align: middle; margin: 0 10px 10px 10px; }
+.table-hover tr { border-top: 1px solid #ccc; color: #798081; font-size: 12px; }
+.table-hover tr a { color: #798081; font-size: 12px; }
 .table-hover tr td { padding: 10px;}
 .row-block { overflow: hidden; }
-.row-block div { float: left; min-height: 30px; margin-bottom: 10px; }
-.row-block .date { width: 10%; font-size: 11px; text-align: center; }
-.row-block .number { width: 10%;}
-.row-block .kind { width: 20%; text-align: center; }
-.row-block .describe-me {width: 98%; border: 1px solid #999; margin: 0; padding: 5px; background: #fff; }
-.row-block .from-to-block { width: 50%;}
-.row-block .status-block { margin-right: 20px; }
-.table-hover tr:nth-child(2n){background: #f1eee9; }
-.table-hover tr:nth-child(2n) td .row-block .describe-me {background: #f6f6f6 !important; }
-.table-hover td.new { font-weight: bold; }
-
+.row-block div { float: left; min-height: 30px; line-height: 20px;}
+.row-block .date { width: 175px; text-align: center; font-size: 11px; }
+.row-block .number { width: 30px; font-size: 11px; }
+.row-block .kind { width: 10%; text-align: center; font-size: 11px; }
+.row-block .describe-me { text-align: justify; border: 1px solid #eee; background: #fff; overflow: hidden; text-overflow: ellipsis; line-height: 1.5; }
+.row-block .describe-me a { color: #798081; font-size: 12px; margin: 10px; display: block; max-height: 34px; overflow: hidden; }
+.row-block .subject-block { margin: 0; font-weight: bold; }
+.row-block .subject-block a { line-height: 30px;  overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 892px; display: block; }
+.row-block .from-to-block { margin-right: 20px; font-size: 11px; }
+.row-block .status-block { margin-right: 20px; font-size: 11px; }
+.table-hover tr:nth-child(2n){ background: #FCFCFC; }
+.table-hover tr:nth-child(2n) td .row-block .describe-me { background: #FCFCFC !important; }
+.table-hover td.new, .table-hover td.new .row-block .subject-block a, .table-hover td.new .row-block .describe-me a  { color: #9FADB4;  }
+.mail-information .lead { margin: 0 0 10px 0; line-height: 1.5; color: #798081; text-align: justify; padding: 0 15px;}
+.mail-information .lead .holder-span {margin: 20px 0 10px; display: block; }
+.mail-information .lead .holder-span span { font-size: 12px; display: inline-block; width: 48%;}
+.mail-information .lead .holder-span .status {text-align: right;}
+.mail-information .lead + .date { display: inline-block; font-size: 12px; text-align: right; width: 97%; margin-bottom: 30px;}
+.mail-information h2 { font-weight: bold; margin: 20px 0;}
+.mail-information .documents li {
+    margin-top: 20px;}

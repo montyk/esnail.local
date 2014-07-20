@@ -111,3 +111,13 @@
 #7 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
 #8 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
 #9 {main} in Z:\home\esnail.local\www\modules\orm\classes\Kohana\ORM.php:603
+2014-07-20 07:57:31 --- CRITICAL: Kohana_Exception [ 0 ]: Cannot update mail model because it is not loaded. ~ MODPATH\orm\classes\Kohana\ORM.php [ 1357 ] in Z:\home\esnail.local\www\application\classes\Model\Mail.php:38
+2014-07-20 07:57:31 --- DEBUG: #0 Z:\home\esnail.local\www\application\classes\Model\Mail.php(38): Kohana_ORM->update()
+#1 Z:\home\esnail.local\www\application\classes\Controller\Admin\Mail.php(60): Model_Mail->update_mail(Array, Array)
+#2 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Mail->action_update()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Mail))
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#8 {main} in Z:\home\esnail.local\www\application\classes\Model\Mail.php:38

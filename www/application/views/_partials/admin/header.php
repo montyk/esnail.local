@@ -23,7 +23,7 @@
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/client/">Client Mode</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Exit</a></li>
+                        <li><a href="/auth/logout">Exit</a></li>
                     </ul>
                 </li>
             </ul>

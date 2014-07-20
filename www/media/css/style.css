@@ -14,7 +14,7 @@ h1 { font-weight: bold; font-size: 26px; color: #002344; }
 .faq-home-box .content-box-item:last-child { border-bottom: 0 none; }
 .faq-home-box .content-box-item h2 { font-size: 16px; font-weight: bold; margin: 15px 0; }
 .faq-home-box .content-box-item p { font-size: 13px; line-height: 1.5; margin-bottom: 15px; }
-
+`
 .entries-single { padding: 15px 0; clear: both;  overflow: hidden; border: 1px solid #999;border-radius: 3px;box-shadow: 0 1px 5px 0 #4a4a4a;margin-bottom: 20px;}
 .entries-container .entries-single {border: 0 none; border-bottom: 1px solid; box-shadow: none; margin:0; }
 .entries-single:last-child { border-bottom: 0 none; }
@@ -36,7 +36,7 @@ a:hover { text-decoration: underline;}
 .topbar-items li { float: right; background: #fff; padding: 7px 10px; margin-left: 10px; font-size: 13px; }
 .topbar-items li a { text-decoration: none; color: #000; }
 #login-button {padding-bottom: 15px;}
-#register-button { background: #fe491c; background-image: linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -o-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -moz-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -webkit-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -ms-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, rgb(252, 131, 101)), color-stop(0.66, rgb(254, 73, 28))); border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; width: 185px; }
+#register-button { text-align: center; background: #fe491c; background-image: linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -o-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -moz-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -webkit-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -ms-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, rgb(252, 131, 101)), color-stop(0.66, rgb(254, 73, 28))); border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; width: 185px; }
 li#register-button a {color: #fff;}
 #register-button:hover {background: #DE2C00;}
 .login-box { float: right; width: 325px; background: #fff; color: #000; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
@@ -158,4 +158,4 @@ h3.allCaps { text-transform: uppercase; font-size: 15px; font-weight: bold; padd
 #footer-links a:hover { text-decoration: underline; color: #fff; }
 .plans-page-box, .faq-page-box, .security-page-box, .about-page-box, .privacy-page-box, .how-page-box, .blog-page-box, .support-page-box { padding: 10px; margin: 20px 0;}
 .single-entry-text { float: right;width: 740px;}
-.single-entry-text p { font-family: 'Droid Serif',​ Tahoma, ​Arial,​ sans-serif; line-height:24px; padding: 10px;}
+.single-entry-text p { font-family: '"Droid Serif",​ Tahoma, ​Arial,​ sans-serif'; line-height:24px; padding: 10px;}

@@ -55,14 +55,12 @@ class Controller_Admin_User extends Controller_Admin
                     array('firstname', 'lastname', 'email', 'password', 'promo', 'username')
                 );
                 $user->add('roles', ORM::factory('role', array('name' => 'login')));
-
+                Controller::redirect('/admin/user');
             } catch (ORM_Validation_Exception $e) {
                 $this->alert['message'] = 'There were errors, please see form below';
                 $this->alert['errors'] = $e->errors('models');
             }
         }
-
-        Controller::redirect('/admin/user');
     }
 
     public function action_update()
@@ -76,14 +74,12 @@ class Controller_Admin_User extends Controller_Admin
                     $post,
                     array('firstname', 'lastname', 'email', 'password', 'promo', 'username')
                 );
-
+                Controller::redirect('/admin/user');
             } catch (ORM_Validation_Exception $e) {
                 $this->alert['message'] = 'There were errors, please see form below';
                 $this->alert['errors'] = $e->errors('models');
             }
         }
-
-        Controller::redirect('/admin/user');
     }
 }
 

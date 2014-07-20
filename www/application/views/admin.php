@@ -12,6 +12,7 @@
         echo HTML::style('media/css/util.css');
         echo HTML::style('media/css/bootstrap.min.css');
         echo HTML::style('media/css/sticky-footer-navbar.css');
+        echo HTML::style('media/css/admin.css');
     ?>
 </head>
 <body class='front'>

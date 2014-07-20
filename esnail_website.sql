@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 20, 2014 at 02:34 PM
+-- Generation Time: Jul 20, 2014 at 04:44 PM
 -- Server version: 5.5.25
 -- PHP Version: 5.3.13
 
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `mails` (
   `description` text NOT NULL,
   `from` varchar(255) NOT NULL,
   `to` varchar(255) NOT NULL,
-  `kind` varchar(15) NOT NULL,
+  `kind` varchar(15) NOT NULL DEFAULT 'm',
   `delivered` tinyint(1) NOT NULL DEFAULT '0',
   `viewed` tinyint(1) NOT NULL DEFAULT '0',
   `held` tinyint(1) NOT NULL DEFAULT '0',
@@ -40,7 +40,14 @@ CREATE TABLE IF NOT EXISTS `mails` (
   `user_id` int(8) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `mails`
+--
+
+INSERT INTO `mails` (`id`, `subject`, `description`, `from`, `to`, `kind`, `delivered`, `viewed`, `held`, `archived`, `user_id`, `created_at`) VALUES
+(2, 'blah blah blah', 'blah blah blahblah bla', 'adress 1', 'adress 24444', 'p', 0, 0, 0, 0, 9, '2014-07-20 12:14:06');
 
 -- --------------------------------------------------------
 

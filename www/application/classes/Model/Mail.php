@@ -1,56 +1,43 @@
 <?php defined('SYSPATH') or die('No direct access allowed.');
 
-class Model_User extends ORM
+class Model_Mail extends ORM
 {
 
-    protected $_has_many = array(
-        'mails' => array(),
-        'user_tokens' => array('model' => 'user_token'),
-        'roles' => array('model' => 'role', 'through' => 'roles_users'),
+    protected $_belongs_to = array(
+        'user'     => array( )
     );
 
     public function rules()
     {
         return array(
-            'firstname' => array(
+            'from' => array(
                 array('not_empty'),
-                array('max_length', array(':value', 32)),
+                array('max_length', array(':value', 255)),
             ),
-            'lastname' => array(
+            'to' => array(
                 array('not_empty'),
-                array('max_length', array(':value', 32)),
+                array('max_length', array(':value', 255)),
             ),
-            'password' => array(
+            'subject' => array(
                 array('not_empty'),
+                array('max_length', array(':value', 255)),
             ),
-            'email' => array(
+            'description' => array(
                 array('not_empty'),
-                array('email'),
-                array(array($this, 'unique'), array('email', ':value')),
             ),
         );
     }
 
     public function create_mail($values, $expected)
     {
-        $extra_validation = Model_Mail::get_password_validation($values);
-        return $this->values($values, $expected)->create($extra_validation);
+        return $this->values($values, $expected)->create();
     }
 
     public function update_mail($values, $expected = NULL)
     {
-        if (empty($values['password'])) {
-            unset($values['password'], $values['password_confirm']);
-        }
-
-        $extra_validation = Model_Mail::get_password_validation($values);
-        return $this->values($values, $expected)->update($extra_validation);
+        return $this->values($values, $expected)->update();
     }
 
-    public function trigger_block()
-    {
-        return ($this->blocked) ? $this->set('blocked', 0)->update() : $this->set('blocked', 1)->update();
-    }
 
     public function trigger_admin()
     {
@@ -60,4 +47,25 @@ class Model_User extends ORM
             return $this->add('roles', ORM::factory('role', array('name' => 'admin')));
         }
     }
+
+
+    public function trigger_hold()
+    {
+        return ($this->held) ? $this->set('held', 0)->update() : $this->set('held', 1)->update();
+    }
+
+
+
+    public function trigger_archive()
+    {
+        return ($this->archived) ? $this->set('archived', 0)->update() : $this->set('archived', 1)->update();
+    }
+
+
+
+    public function trigger_deliver()
+    {
+        return ($this->delivered) ? $this->set('delivered', 0)->update() : $this->set('delivered', 1)->update();
+    }
+
 }

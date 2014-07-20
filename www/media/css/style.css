@@ -51,21 +51,20 @@ li#register-button a {color: #fff;}
 .login-table input[type="submit"]:hover {color: #de2c00;}
 #menu { margin: 20px auto 0; overflow: hidden; width: 960px; }
 #menu ul { width: 980px; list-style-type: none; margin-left: 30px; }
-#menu li { display: inline; background: #375d81; float: left; width: 150px; margin: 0; text-align: center; border: 1px solid #bbb; border-right: none; border-bottom: none; font-size: 14px; background-image: linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -o-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -moz-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -webkit-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -ms-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, rgb(55, 93, 129)), color-stop(0.66, rgb(18, 64, 107))); -webkit-transition: all .1s; -moz-transition: all .1s; -o-transition: all .1s; transition: all .1s; }
-#menu li a { color: #fff; display: block; text-decoration: none; padding: 7px 5px; }
+#menu li { background: #375d81; float: left; width: 150px; margin: 0; text-align: center; border: 1px solid #bbb; border-right: none; border-bottom: none; font-size: 14px; background-image: linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -o-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -moz-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -webkit-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -ms-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, rgb(55, 93, 129)), color-stop(0.66, rgb(18, 64, 107))); -webkit-transition: all .1s; -moz-transition: all .1s; -o-transition: all .1s; transition: all .1s; }
+#menu li a { color: #fff; display: block; padding: 7px 5px; }
 #menu li:hover {background: #fff;}
 #menu li:hover a {color: #002344;}
 #menu li.active-link {background: #fff;}
 #menu li.active-link a {color: #000;}
 #menu li:last-of-type {border-right: 1px solid #999;}
-.content-box h1 { font-size: 20px; margin: 8px 0 0 8px; font-weight: bold; }
 #register-table {margin: 10px;}
 #register-table td {padding: 3px 0;}
 .subsectionTitle { padding-top: 15px !important; font-weight: bold; }
 #plans-info {padding: 0 5px;}
 .testimonials-page-box img {width: 920px;}
 .registerStep2 {display: none;}
-.content-box h1 {font-size: 24px;}
+.content-box h1 {font-size: 24px;  margin: 8px 0 0 8px;}
 .content > .wrapper { padding: 10px 30px 20px 30px; background: url("../images/content-bg.png") center top repeat-y; }
 .content-box { box-shadow: 0 1px 5px 0 #4a4a4a; border-radius: 3px; background: #fff; padding: 10px; margin: 20px 0; border: 1px solid #999; }
 .order-button { text-decoration: none; font-size: 14px; min-width: 150px; border: 0; color: #fff; padding: 3px 35px; border-radius: 2px; background: #fe491c; background-image: linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -o-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -moz-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -webkit-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -ms-linear-gradient(top, rgb(252, 131, 101) 1%, rgb(254, 73, 28) 66%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, rgb(252, 131, 101)), color-stop(0.66, rgb(254, 73, 28))); }
@@ -73,7 +72,6 @@ li#register-button a {color: #fff;}
 .plans-box .order-button {margin: 0 0 0 80px;}
 .plans-table .order-button { margin-left: 0; padding: 3px 10px; }
 .legend {font-size: 11px;}
-.content-box h1 {font-size: 24px;}
 .plans-page-box p, .security-page-box p, .about-page-box p, .how-page-box p, .faq-page-box p, .blog-page-box p, .support-page-box p { padding: 10px; line-height: 1.5; }
 .how-page-box .wrap { width: 70%; margin: 0 auto; }
 table.how {width: 100%;}
@@ -159,3 +157,25 @@ h3.allCaps { text-transform: uppercase; font-size: 15px; font-weight: bold; padd
 .plans-page-box, .faq-page-box, .security-page-box, .about-page-box, .privacy-page-box, .how-page-box, .blog-page-box, .support-page-box { padding: 10px; margin: 20px 0;}
 .single-entry-text { float: right;width: 740px;}
 .single-entry-text p { font-family: '"Droid Serif",​ Tahoma, ​Arial,​ sans-serif'; line-height:24px; padding: 10px;}
+.filter { overflow: hidden; padding: 10px 10px 0 10px; }
+.filter li { float: left; width: 150px; text-align: center; border: 1px solid #bbb; border-bottom: 0 none; border-right: 0 none; background-image: linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -o-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -moz-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -webkit-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -ms-linear-gradient(top, rgb(55, 93, 129) 1%, rgb(18, 64, 107) 66%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.01, rgb(55, 93, 129)), color-stop(0.66, rgb(18, 64, 107))); -webkit-transition: all .1s; -moz-transition: all .1s; -o-transition: all .1s; transition: all .1s; }
+.filter li:last-of-type {border-right: 1px solid #999;}
+.filter li:hover { background: #fff; background-image: none; }
+.filter li.active { background: #fff; }
+.filter li a { padding: 7px 5px; display: block; color: #fff; }
+.filter li.active a { color: #002344; text-decoration: none; }
+.filter li:hover a { color: #002344;}
+.table-hover { width: 98%; vertical-align: middle; margin: 0 10px 10px 10px; }
+.table-hover tr td { padding: 10px;}
+.row-block { overflow: hidden; }
+.row-block div { float: left; min-height: 30px; margin-bottom: 10px; }
+.row-block .date { width: 10%; font-size: 11px; text-align: center; }
+.row-block .number { width: 10%;}
+.row-block .kind { width: 20%; text-align: center; }
+.row-block .describe-me {width: 98%; border: 1px solid #999; margin: 0; padding: 5px; background: #fff; }
+.row-block .from-to-block { width: 50%;}
+.row-block .status-block { margin-right: 20px; }
+.table-hover tr:nth-child(2n){background: ##f1eee9; }
+.table-hover tr:nth-child(2n) td .row-block .describe-me {background: #f6f6f6 !important; }
+.table-hover td.new { font-weight: bold; }
+

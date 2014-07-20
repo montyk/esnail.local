@@ -23,10 +23,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Mail.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Mail.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/application/classes/Controller/Admin/Mail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="42" selection-start="930" selection-end="930" vertical-scroll-proportion="-0.9012797" vertical-offset="1122" max-vertical-offset="1768">
+            <state line="76" column="0" selection-start="2209" selection-end="2720" vertical-scroll-proportion="-14.5" vertical-offset="915" max-vertical-offset="1768">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/application/views/client/mail/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="47" selection-start="666" selection-end="666" vertical-scroll-proportion="0.4095064" vertical-offset="184" max-vertical-offset="731">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mail.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/application/classes/Controller/Client/Mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="35" selection-start="245" selection-end="249" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="391">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/application/views/admin/mail/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/application/views/admin/mail/edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="14" selection-start="0" selection-end="2506" vertical-scroll-proportion="-3.9230769" vertical-offset="85" max-vertical-offset="1071">
               <folding />
             </state>
           </provider>
@@ -53,7 +89,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/application/views/admin/mail/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="96" selection-start="1410" selection-end="1410" vertical-scroll-proportion="-17.0" vertical-offset="119" max-vertical-offset="935">
+            <state line="14" column="25" selection-start="0" selection-end="2122" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
@@ -91,8 +127,6 @@
         <option value="$PROJECT_DIR$/www/application/classes/Model/User.php" />
         <option value="$PROJECT_DIR$/www/application/views/admin/user/add.php" />
         <option value="$PROJECT_DIR$/www/application/views/admin/user/edit.php" />
-        <option value="$PROJECT_DIR$/www/application/classes/Controller/Client/Mail.php" />
-        <option value="$PROJECT_DIR$/www/application/views/client/mail/index.php" />
         <option value="$PROJECT_DIR$/www/application/classes/Controller/Client/Plan.php" />
         <option value="$PROJECT_DIR$/www/application/classes/Controller/Client/Business.php" />
         <option value="$PROJECT_DIR$/www/application/classes/Controller/Client/Account.php" />
@@ -102,7 +136,6 @@
         <option value="$PROJECT_DIR$/www/application/views/_partials/client/header.php" />
         <option value="$PROJECT_DIR$/www/application/views/_partials/admin/header.php" />
         <option value="$PROJECT_DIR$/www/media/css/style.css" />
-        <option value="$PROJECT_DIR$/www/application/views/admin/mail/view.php" />
         <option value="$PROJECT_DIR$/www/application/views/admin/mail/new.php" />
         <option value="$PROJECT_DIR$/www/application/classes/Controller/Admin/User.php" />
         <option value="$PROJECT_DIR$/www/application/views/admin.php" />
@@ -110,6 +143,9 @@
         <option value="$PROJECT_DIR$/www/application/classes/Controller/Admin/Mail.php" />
         <option value="$PROJECT_DIR$/www/application/views/admin/mail/index.php" />
         <option value="$PROJECT_DIR$/www/application/classes/Model/Mail.php" />
+        <option value="$PROJECT_DIR$/www/application/classes/Controller/Client/Mail.php" />
+        <option value="$PROJECT_DIR$/www/application/views/admin/mail/view.php" />
+        <option value="$PROJECT_DIR$/www/application/views/client/mail/index.php" />
       </list>
     </option>
   </component>
@@ -479,6 +515,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="esnail.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="esnail.local" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -671,11 +737,6 @@
         <state line="261" column="21" selection-start="6024" selection-end="6024" vertical-scroll-proportion="0.0" vertical-offset="4274" max-vertical-offset="6290" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/application/classes/Controller/Client/Mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="67" selection-start="168" selection-end="168" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="289" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/application/views/_partials/client/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496" />
@@ -728,7 +789,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/application/classes/Controller/Client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="862" selection-end="862" vertical-scroll-proportion="0.70689654" vertical-offset="12" max-vertical-offset="476" />
+        <state line="20" column="0" selection-start="862" selection-end="862" vertical-scroll-proportion="0.70689654" vertical-offset="12" max-vertical-offset="476">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/application/classes/Controller/Admin.php">
@@ -766,23 +829,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/application/views/admin/mail/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="490">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/application/views/client/mail/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="490">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/application/views/client/mail/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
           <folding />
         </state>
       </provider>
@@ -822,13 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/application/views/admin/mail/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="54" selection-start="221" selection-end="221" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/application/classes/Controller/Admin/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="3" selection-start="441" selection-end="605" vertical-scroll-proportion="-9.269231" vertical-offset="82" max-vertical-offset="1598">
@@ -836,16 +878,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/application/views/admin/mail/index.php">
+    <entry file="file://$PROJECT_DIR$/www/application/views/admin/mail/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="96" selection-start="1410" selection-end="1410" vertical-scroll-proportion="-17.0" vertical-offset="119" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/application/classes/Model/Mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="26" selection-start="1405" selection-end="1405" vertical-scroll-proportion="-6.0" vertical-offset="745" max-vertical-offset="1292">
+        <state line="11" column="14" selection-start="0" selection-end="2506" vertical-scroll-proportion="-3.9230769" vertical-offset="85" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>
@@ -857,9 +892,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/application/classes/Model/Mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="26" selection-start="1405" selection-end="1405" vertical-scroll-proportion="-6.0" vertical-offset="745" max-vertical-offset="1292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/application/views/admin/mail/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="0" selection-end="2122" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/application/classes/Controller/Admin/Mail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="42" selection-start="930" selection-end="930" vertical-scroll-proportion="-0.9012797" vertical-offset="1122" max-vertical-offset="1768">
+        <state line="76" column="0" selection-start="2209" selection-end="2720" vertical-scroll-proportion="-14.5" vertical-offset="915" max-vertical-offset="1768">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/application/classes/Controller/Client/Mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="35" selection-start="245" selection-end="249" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/application/views/admin/mail/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="490">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/application/views/client/mail/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="47" selection-start="666" selection-end="666" vertical-scroll-proportion="0.4095064" vertical-offset="184" max-vertical-offset="731">
           <folding />
         </state>
       </provider>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Июл 20 2014 г., 22:25
+-- Время создания: Июл 21 2014 г., 01:12
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `files` (
   `mail_id` int(11) NOT NULL,
   `file` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 -- --------------------------------------------------------
 
@@ -75,7 +75,18 @@ CREATE TABLE IF NOT EXISTS `mails` (
   `user_id` int(8) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+
+--
+-- Дамп данных таблицы `mails`
+--
+
+INSERT INTO `mails` (`id`, `subject`, `description`, `from`, `to`, `kind`, `delivered`, `viewed`, `held`, `archived`, `user_id`, `created_at`) VALUES
+(1, 'Lorem ipsum dolor sit amet', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.', 'France', 'Canada', 'm', 0, 1, 0, 0, 10, '2014-07-20 18:31:36'),
+(2, 'Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet', 'Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. ', 'Russia', 'Belarus', 'm', 0, 1, 0, 0, 10, '2014-07-20 18:32:30'),
+(3, 'Cras dapibus', 'Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.', 'Bulgaria', 'Poland', 'm', 0, 1, 0, 0, 10, '2014-07-20 18:33:29'),
+(4, 'Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu', 'Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,', 'Lithuania', 'Canada', 'p', 0, 1, 0, 0, 10, '2014-07-20 18:34:21'),
+(5, 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.', 'Swiss', 'Ukraine', 'm', 0, 1, 0, 0, 10, '2014-07-20 18:45:28');
 
 -- --------------------------------------------------------
 
@@ -201,7 +212,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `plan_id`, `firstname`, `lastname`, `email`, `username`, `password`, `logins`, `last_login`, `promo`, `blocked`) VALUES
-(10, 0, 'Simsonne', 'S', 'simsonne@tut.by', 'simsonne@tut.by', '6e70a4377272e2ea5fdbc7525ab22ed09cf85e9ed91617da68a8eec95e6605b8', 1, 1405880168, 'simsonne@tut.by', 0);
+(10, 0, 'Stephan', 'DuVal', 'admin@esnail.com', 'admin@esnail.com', 'd974c9584319b7a3e087d9c0597eecacae4900d80eece56c3ca2878260b504ed', 3, 1405890377, '', 0);
 
 -- --------------------------------------------------------
 

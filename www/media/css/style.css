@@ -14,7 +14,6 @@ h1 { font-weight: bold; font-size: 26px; color: #002344; }
 .faq-home-box .content-box-item:last-child { border-bottom: 0 none; }
 .faq-home-box .content-box-item h2 { font-size: 16px; font-weight: bold; margin: 15px 0; }
 .faq-home-box .content-box-item p { font-size: 13px; line-height: 1.5; margin-bottom: 15px; }
-`
 .entries-single { padding: 15px 0; clear: both;  overflow: hidden; border: 1px solid #999;border-radius: 3px;box-shadow: 0 1px 5px 0 #4a4a4a;margin-bottom: 20px;}
 .entries-container .entries-single {border: 0 none; border-bottom: 1px solid; box-shadow: none; margin:0; }
 .entries-single:last-child { border-bottom: 0 none; }
@@ -175,7 +174,7 @@ h3.allCaps { text-transform: uppercase; font-size: 15px; font-weight: bold; padd
 .row-block .describe-me {width: 98%; border: 1px solid #999; margin: 0; padding: 5px; background: #fff; }
 .row-block .from-to-block { width: 50%;}
 .row-block .status-block { margin-right: 20px; }
-.table-hover tr:nth-child(2n){background: ##f1eee9; }
+.table-hover tr:nth-child(2n){background: #f1eee9; }
 .table-hover tr:nth-child(2n) td .row-block .describe-me {background: #f6f6f6 !important; }
 .table-hover td.new { font-weight: bold; }
 

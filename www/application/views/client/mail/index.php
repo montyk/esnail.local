@@ -2,15 +2,17 @@
     <h1>Mails</h1>
 
     <div class="bs-example">
-        <ul class="filter">
-            <li><a href="#">New</a></li>
-            <li><a href="#">Archived</a></li>
-            <li><a href="#">Hold</a></li>
-            <li class="active"><a href="#">All</a></li>
-        </ul>
+        <?php if ($mails->count_all() > 0) { ?>
+            <ul class="filter">
+                <li><a href="#">New</a></li>
+                <li><a href="#">Archived</a></li>
+                <li><a href="#">Hold</a></li>
+                <li class="active"><a href="#">All</a></li>
+            </ul>
+        <?php } ?>
         <table class="table table-hover">
             <tbody>
-            <?php foreach ($mails as $mail) { ?>
+            <?php foreach ($mails->find_all() as $mail) { ?>
                 <tr>
                     <td  class="<?=($mail->archived) ? 'archived' : ''; ?> <?=($mail->viewed) ? '' : 'new'; ?> <?=($mail->delivered) ? 'delivered' : ''; ?> <?=($mail->held) ? 'held' : ''; ?>">
                         <div class="row-block">

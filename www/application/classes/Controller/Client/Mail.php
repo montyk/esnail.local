@@ -9,7 +9,7 @@ class Controller_Client_Mail extends Controller_Client
             ->bind('mails', $mails);
 
         $user = Auth::instance()->get_user();
-        $mails = $user->mails->find_all();
+        $mails = $user->mails;
     }
 
     public function action_hold()

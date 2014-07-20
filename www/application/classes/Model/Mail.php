@@ -72,4 +72,9 @@ class Model_Mail extends ORM
         return ($this->delivered) ? $this->set('delivered', 0)->update() : $this->set('delivered', 1)->update();
     }
 
+    public function trigger_viewed()
+    {
+        return $this->set('viewed', 1)->update();
+    }
+
 }

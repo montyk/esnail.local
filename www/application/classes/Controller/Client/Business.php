@@ -27,8 +27,9 @@ class Controller_Client_Business extends Controller_Client {
 
     public function action_delete()
     {
+        $user = Auth::instance()->get_user();
         $business = ORM::factory('Business', $this->request->param('id'));
-        $business->delete();
+        if ($business->user->id == $user->id) $business->delete();
         Controller::redirect('/client/business');
     }
 }

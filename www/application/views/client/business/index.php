@@ -11,7 +11,7 @@
     <?php } ?>
 
     <h1>Add More Business</h1>
-    <form method="post" accept-charset="utf-8">
+    <form method="post" action="/client/business/new" accept-charset="utf-8">
         <table id="register-table">
             <tr>
                 <td><label for="name">Business:</label></td>

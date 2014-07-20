@@ -6,6 +6,13 @@ class Controller_Client_Business extends Controller_Client {
         ->bind('business', $business);
         $user = Auth::instance()->get_user();
 
+        $business = $user->business;
+    }
+
+    public function action_new()
+    {
+        $user = Auth::instance()->get_user();
+
         if (HTTP_Request::POST == $this->request->method()) {
             try {
                 $post = $this->request->post();
@@ -21,8 +28,7 @@ class Controller_Client_Business extends Controller_Client {
                 $this->alert['errors'] = $e->errors('models');
             }
         }
-
-        $business = $user->business;
+        Controller::redirect('/client/business');
     }
 
     public function action_delete()

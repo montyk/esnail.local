@@ -5,6 +5,7 @@ class Model_User extends ORM
 
     protected $_has_many = array(
         'mails' => array(),
+        'business' => array(),
         'user_tokens' => array('model' => 'user_token'),
         'roles' => array('model' => 'role', 'through' => 'roles_users'),
     );

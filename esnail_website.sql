@@ -2,10 +2,10 @@
 -- version 3.5.1
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Jul 20, 2014 at 10:13 PM
--- Server version: 5.5.25
--- PHP Version: 5.3.13
+-- Хост: 127.0.0.1
+-- Время создания: Июл 20 2014 г., 22:25
+-- Версия сервера: 5.5.25
+-- Версия PHP: 5.3.13
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `esnail_website`
+-- База данных: `esnail_website`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `businesses`
+-- Структура таблицы `businesses`
 --
 
 CREATE TABLE IF NOT EXISTS `businesses` (
@@ -31,12 +31,21 @@ CREATE TABLE IF NOT EXISTS `businesses` (
   `name` varchar(70) NOT NULL,
   `user_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Дамп данных таблицы `businesses`
+--
+
+INSERT INTO `businesses` (`id`, `name`, `user_id`) VALUES
+(1, 'My 1st Business', 10),
+(2, 'My Second Business', 10),
+(3, 'My 3rd Business', 10);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `files`
+-- Структура таблицы `files`
 --
 
 CREATE TABLE IF NOT EXISTS `files` (
@@ -49,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `files` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mails`
+-- Структура таблицы `mails`
 --
 
 CREATE TABLE IF NOT EXISTS `mails` (
@@ -71,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `mails` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `news`
+-- Структура таблицы `news`
 --
 
 CREATE TABLE IF NOT EXISTS `news` (
@@ -84,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `news` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
--- Dumping data for table `news`
+-- Дамп данных таблицы `news`
 --
 
 INSERT INTO `news` (`id`, `added_on`, `excerpt`, `title`, `content`) VALUES
@@ -96,7 +105,7 @@ INSERT INTO `news` (`id`, `added_on`, `excerpt`, `title`, `content`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `plans`
+-- Структура таблицы `plans`
 --
 
 CREATE TABLE IF NOT EXISTS `plans` (
@@ -108,12 +117,23 @@ CREATE TABLE IF NOT EXISTS `plans` (
   `monthFee` float NOT NULL,
   `yearFee` float NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+
+--
+-- Дамп данных таблицы `plans`
+--
+
+INSERT INTO `plans` (`id`, `name`, `description`, `scans`, `names`, `monthFee`, `yearFee`) VALUES
+(1, 'Backpacker', 'Our On Call plan is a pay as you go service for those who receive very little mail or who would like to try out our service to see if it''s right for them.', 5, 1, 5, 50),
+(2, 'Basic', 'Our basic plan suits the needs of digital natives who receive bills and notices in the mail but do most of their mailing online.', 20, 1, 15, 0),
+(3, 'Personal', 'Perfect for the individual who travels often or works in remote locations.', 100, 1, 19, 0),
+(4, 'Family', 'Our family plan offers the same features as our personal plan but for you can have up to six separate names on the same plan. Great for families large and small.', 100, 6, 25, 0),
+(5, 'Business', 'Our eLetter mail management system is a great tool for small businesses who want to spend less time sorting mail and more time engaging with their clients.', 300, 99999, 54.99, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `roles`
+-- Структура таблицы `roles`
 --
 
 CREATE TABLE IF NOT EXISTS `roles` (
@@ -125,7 +145,7 @@ CREATE TABLE IF NOT EXISTS `roles` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Dumping data for table `roles`
+-- Дамп данных таблицы `roles`
 --
 
 INSERT INTO `roles` (`id`, `name`, `description`) VALUES
@@ -135,7 +155,7 @@ INSERT INTO `roles` (`id`, `name`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `roles_users`
+-- Структура таблицы `roles_users`
 --
 
 CREATE TABLE IF NOT EXISTS `roles_users` (
@@ -145,10 +165,18 @@ CREATE TABLE IF NOT EXISTS `roles_users` (
   KEY `fk_role_id` (`role_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Дамп данных таблицы `roles_users`
+--
+
+INSERT INTO `roles_users` (`user_id`, `role_id`) VALUES
+(10, 1),
+(10, 2);
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Структура таблицы `users`
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
@@ -166,12 +194,19 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `uniq_username` (`username`),
   UNIQUE KEY `uniq_email` (`email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`id`, `plan_id`, `firstname`, `lastname`, `email`, `username`, `password`, `logins`, `last_login`, `promo`, `blocked`) VALUES
+(10, 0, 'Simsonne', 'S', 'simsonne@tut.by', 'simsonne@tut.by', '6e70a4377272e2ea5fdbc7525ab22ed09cf85e9ed91617da68a8eec95e6605b8', 1, 1405880168, 'simsonne@tut.by', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user_tokens`
+-- Структура таблицы `user_tokens`
 --
 
 CREATE TABLE IF NOT EXISTS `user_tokens` (
@@ -188,18 +223,18 @@ CREATE TABLE IF NOT EXISTS `user_tokens` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
--- Constraints for dumped tables
+-- Ограничения внешнего ключа сохраненных таблиц
 --
 
 --
--- Constraints for table `roles_users`
+-- Ограничения внешнего ключа таблицы `roles_users`
 --
 ALTER TABLE `roles_users`
   ADD CONSTRAINT `roles_users_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `roles_users_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
 
 --
--- Constraints for table `user_tokens`
+-- Ограничения внешнего ключа таблицы `user_tokens`
 --
 ALTER TABLE `user_tokens`
   ADD CONSTRAINT `user_tokens_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;

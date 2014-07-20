@@ -7,6 +7,10 @@ class Model_Mail extends ORM
         'user'     => array( )
     );
 
+    protected $_has_many = array(
+        'files' => array(),
+    );
+
     public function rules()
     {
         return array(

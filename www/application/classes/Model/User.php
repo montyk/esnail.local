@@ -9,6 +9,10 @@ class Model_User extends ORM
         'roles' => array('model' => 'role', 'through' => 'roles_users'),
     );
 
+    protected $_has_one = array(
+        'plan' => array(),
+    );
+
     public function rules()
     {
         return array(

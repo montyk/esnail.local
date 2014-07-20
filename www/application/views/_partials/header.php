@@ -1,8 +1,16 @@
 <div class="topbar">
     <div class="wrapper">
         <ul class="topbar-items">
-            <li id="login-button"><a href="#login-box">Existing user?</a></li>
-            <li id="register-button"><a href="/auth/register">Try it for free! Register now!</a></li>
+            <?php if (!Auth::instance()->logged_in()) { ?>
+                <li id="login-button"><a href="#login-box">Existing user?</a></li>
+            <?php } ?>
+            <li id="register-button">
+                <?php if (!Auth::instance()->logged_in()) { ?>
+                    <a href="/auth/register">Try it for free! Register now!</a>
+                <?php } else { ?>
+                    <a href="/auth/logout">Logout</a> | <a href="/client">Manage My Mails</a>
+                <?php } ?>
+            </li>
         </ul>
     </div>
 </div>
@@ -12,7 +20,7 @@
             <a href="/index.html" data-remote="true"><img src="/media/images/logo.png" alt="eSnail"/></a>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;Operating as eSnail.ca Automated Mail Systems Inc.
         </div>
-
+        <?php if (!Auth::instance()->logged_in()) { ?>
         <div class="login-box" id="login-box">
             <form action="/auth/login" method="POST">
                 <table class="login-table" border="0" cellspacing="0" cellpadding="0">
@@ -45,5 +53,6 @@
                 <p><a href="#">Can't access your account?</a></p>
             </form>
         </div>
+        <?php } ?>
     </div>
 </div>

@@ -23,15 +23,15 @@
         <?php foreach ($mails as $mail) { ?>
             <tr>
                 <td><?= $mail->id; ?></td>
-                <th><?= $mail->created_at; ?></th>
+                <td><?= $mail->created_at; ?></td>
                 <td><a href="/admin/mail/view/<?= $mail->id; ?>"><?= $mail->subject; ?></a></td>
                 <td class="mailUser"><?= $mail->user->firstname . ' ' . $mail->user->lastname. ' &lt;' . $mail->user->username . '&gt;'; ?></td>
                 <td><?= $mail->from; ?></td>
                 <td><?= $mail->to; ?></td>
                 <td><?= ($mail->kind == 'p') ? 'Parcel' : 'Mail'; ?></td>
-                <th><a href="/admin/mail/archive/<?= $mail->id; ?>"><?= $mail->archived; ?></a></th>
-                <th><a href="/admin/mail/hold/<?= $mail->id; ?>"><?= $mail->held; ?></a></th>
-                <th><a href="/admin/mail/deliver/<?= $mail->id; ?>"><?= $mail->delivered; ?></a></th>
+                <td><a href="/admin/mail/archive/<?= $mail->id; ?>"><?= $mail->archived; ?></a></td>
+                <td><a href="/admin/mail/hold/<?= $mail->id; ?>"><?= $mail->held; ?></a></td>
+                <td><a href="/admin/mail/deliver/<?= $mail->id; ?>"><?= $mail->delivered; ?></a></td>
                 <td>
                     <div class="dropdown">
                         <button class="btn btn-default dropdown-toggle" type="button" id="to" data-toggle="dropdown">

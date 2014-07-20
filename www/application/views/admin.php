@@ -8,6 +8,7 @@
     <?php
         echo HTML::script('http://code.jquery.com/jquery-1.7.min.js');
         echo HTML::script('media/js/bootstrap.min.js');
+        echo HTML::script('media/js/bootstrap.file-input.js');
         echo HTML::style('media/css/reset.css');
         echo HTML::style('media/css/util.css');
         echo HTML::style('media/css/bootstrap.min.css');

@@ -121,3 +121,79 @@
 #6 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
 #7 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
 #8 {main} in Z:\home\esnail.local\www\application\classes\Model\Mail.php:38
+2014-07-20 10:27:16 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_File::count() ~ APPPATH\views\admin\mail\view.php [ 20 ] in file:line
+2014-07-20 10:27:16 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-07-20 10:35:03 --- CRITICAL: ErrorException [ 1 ]: Call to undefined method Model_File::first() ~ APPPATH\views\admin\mail\view.php [ 25 ] in file:line
+2014-07-20 10:35:03 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-07-20 10:36:18 --- CRITICAL: ErrorException [ 8 ]: Undefined index: file ~ APPPATH\classes\Controller\Admin\File.php [ 8 ] in Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php:8
+2014-07-20 10:36:18 --- DEBUG: #0 Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php(8): Kohana_Core::error_handler(8, 'Undefined index...', 'Z:\home\esnail....', 8, Array)
+#1 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Admin_File->action_upload()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_File))
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#7 {main} in Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php:8
+2014-07-20 10:38:29 --- CRITICAL: Kohana_Exception [ 0 ]: Directory upload must be writable ~ SYSPATH\classes\Kohana\Upload.php [ 80 ] in Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php:8
+2014-07-20 10:38:29 --- DEBUG: #0 Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php(8): Kohana_Upload::save(Array, 'uploaded_file.p...', 'upload')
+#1 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Admin_File->action_upload()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_File))
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#7 {main} in Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php:8
+2014-07-20 10:46:18 --- CRITICAL: ErrorException [ 2 ]: md5_file(statement&amp;travel.png) [function.md5-file]: failed to open stream: No such file or directory ~ APPPATH\classes\Controller\Admin\File.php [ 11 ] in file:line
+2014-07-20 10:46:18 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'md5_file(statem...', 'Z:\home\esnail....', 11, Array)
+#1 Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php(11): md5_file('statement&trave...')
+#2 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Admin_File->action_upload()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_File))
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#8 {main} in file:line
+2014-07-20 10:46:32 --- CRITICAL: ErrorException [ 2 ]: md5_file(statement&amp;travel.png) [function.md5-file]: failed to open stream: No such file or directory ~ APPPATH\classes\Controller\Admin\File.php [ 11 ] in file:line
+2014-07-20 10:46:32 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'md5_file(statem...', 'Z:\home\esnail....', 11, Array)
+#1 Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php(11): md5_file('statement&trave...')
+#2 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Admin_File->action_upload()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_File))
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#8 {main} in file:line
+2014-07-20 10:48:36 --- CRITICAL: ErrorException [ 1 ]: Access to undeclared static property: Request::$referer ~ APPPATH\classes\Controller\Admin\File.php [ 24 ] in file:line
+2014-07-20 10:48:36 --- DEBUG: #0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main} in file:line
+2014-07-20 10:52:31 --- CRITICAL: Kohana_Exception [ 0 ]: Cannot delete mail model because it is not loaded. ~ MODPATH\orm\classes\Kohana\ORM.php [ 1434 ] in Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php:33
+2014-07-20 10:52:31 --- DEBUG: #0 Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php(33): Kohana_ORM->delete()
+#1 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Admin_File->action_delete()
+#2 [internal function]: Kohana_Controller->execute()
+#3 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_File))
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#6 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#7 {main} in Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php:33
+2014-07-20 10:53:16 --- CRITICAL: ErrorException [ 2 ]: md5_file() [function.md5-file]: Filename cannot be empty ~ APPPATH\classes\Controller\Admin\File.php [ 11 ] in file:line
+2014-07-20 10:53:16 --- DEBUG: #0 [internal function]: Kohana_Core::error_handler(2, 'md5_file() [<a ...', 'Z:\home\esnail....', 11, Array)
+#1 Z:\home\esnail.local\www\application\classes\Controller\Admin\File.php(11): md5_file('')
+#2 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Admin_File->action_upload()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_File))
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#8 {main} in file:line
+2014-07-20 11:34:56 --- CRITICAL: Kohana_Exception [ 0 ]: Cannot update plan model because it is not loaded. ~ MODPATH\orm\classes\Kohana\ORM.php [ 1357 ] in Z:\home\esnail.local\www\application\classes\Model\Plan.php:39
+2014-07-20 11:34:56 --- DEBUG: #0 Z:\home\esnail.local\www\application\classes\Model\Plan.php(39): Kohana_ORM->update()
+#1 Z:\home\esnail.local\www\application\classes\Controller\Admin\Plan.php(53): Model_Plan->update_plan(Array, Array)
+#2 Z:\home\esnail.local\www\system\classes\Kohana\Controller.php(84): Controller_Admin_Plan->action_update()
+#3 [internal function]: Kohana_Controller->execute()
+#4 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client\Internal.php(97): ReflectionMethod->invoke(Object(Controller_Admin_Plan))
+#5 Z:\home\esnail.local\www\system\classes\Kohana\Request\Client.php(114): Kohana_Request_Client_Internal->execute_request(Object(Request), Object(Response))
+#6 Z:\home\esnail.local\www\system\classes\Kohana\Request.php(986): Kohana_Request_Client->execute(Object(Request))
+#7 Z:\home\esnail.local\www\index.php(118): Kohana_Request->execute()
+#8 {main} in Z:\home\esnail.local\www\application\classes\Model\Plan.php:39

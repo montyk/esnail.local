@@ -7,62 +7,53 @@
 
         <tr>
             <td></td>
-            <td class="plan-0">Backpacker</td>
-            <td class="plan-1">Basic</td>
-            <td class="plan-2">Personal</td>
-            <td class="plan-3">Family</td>
-            <td class="plan-4">Business</td>
+            <?php foreach(ORM::factory('Plan')->find_all() as $plan) { ?>
+                <td class="plan-<?=$plan->id; ?>"><?=$plan->name; ?></td>
+            <?php } ?>
         </tr>
 
         <tr class="plan-description">
             <td></td>
-            <td class="plan-0">Our On Call plan is a pay as you go service for those who receive very little mail or who would like to try out our service to see if it's right for them.</td>
-            <td class="plan-1">Our basic plan suits the needs of digital natives who receive bills and notices in the mail but do most of their mailing online.</td>
-            <td class="plan-2">Perfect for the individual who travels often or works in remote locations.</td>
-            <td class="plan-3">Our family plan offers the same features as our personal plan but for you can have up to six separate names on the same plan.  Great for families large and small.</td>
-            <td class="plan-4">
-                Our eLetter mail management system is a great tool for small businesses who want to spend less time sorting mail and more time engaging with their clients.
-            </td>
+            <?php foreach(ORM::factory('Plan')->find_all() as $plan) { ?>
+                <td class="plan-<?=$plan->id; ?>"><?=$plan->description; ?></td>
+            <?php } ?>
         </tr>
 
         <tr>
             <td>Included Scans per month</td>
-            <td class="plan-0">5</td>
-            <td class="plan-1">20</td>
-            <td class="plan-2">100</td>
-            <td class="plan-3">100</td>
-            <td class="plan-4">300</td>
+            <?php foreach(ORM::factory('Plan')->find_all() as $plan) { ?>
+                <td class="plan-<?=$plan->id; ?>"><?=$plan->scans; ?></td>
+            <?php } ?>
         </tr>
 
         <tr>
             <td>No. of names on plan</td>
-            <td class="plan-0">1</td>
-            <td class="plan-1">1</td>
-            <td class="plan-2">1</td>
-            <td class="plan-3">6</td>
-            <td class="plan-4">multiple</td>
+            <?php foreach(ORM::factory('Plan')->find_all() as $plan) { ?>
+                <td class="plan-<?=$plan->id; ?>"><?=$plan->names; ?></td>
+            <?php } ?>
         </tr>
 
         <tr class="plan-prices">
             <td>Price</td>
-            <td class="plan-0">
-                $5.00/mo
-                <br><span style="font-weight: normal;">or</span><br>
-                $50.00/year
-            </td>
-            <td class="plan-1">$15.00/mo</td>
-            <td class="plan-2">$19.00/mo</td>
-            <td class="plan-3">$25.00/mo</td>
-            <td class="plan-4">$54.99/mo</td>
+            <?php foreach(ORM::factory('Plan')->find_all() as $plan) { ?>
+                <td class="plan-<?=$plan->id; ?>">
+                    $<?=$plan->monthFee; ?>/mo
+                    <?php if ($plan->yearFee > 0) { ?>
+                        <br><span style="font-weight: normal;">or</span><br>
+                        $<?=$plan->yearFee; ?>/year
+                    <?php } ?>
+                </td>
+            <?php } ?>
         </tr>
 
         <tr>
             <td></td>
-            <td class="plan-0"><a href="/register/?plan=1" class="order-button">Order Now</a></td>
-            <td class="plan-1"><a href="/register/?plan=2" class="order-button">Order Now</a></td>
-            <td class="plan-2"><a href="/register/?plan=3" class="order-button">Order Now</a></td>
-            <td class="plan-3"><a href="/register/?plan=4" class="order-button">Order Now</a></td>
-            <td class="plan-4"><a href="/register/?plan=5" class="order-button">Order Now</a></td>
+
+            <?php foreach(ORM::factory('Plan')->find_all() as $plan) { ?>
+                <td class="plan-<?=$plan->id; ?>">
+                    <a href="/client/plan/set/<?=$plan->id; ?>" class="order-button">Order Now</a>
+                </td>
+            <?php } ?>
         </tr>
 
     </table>

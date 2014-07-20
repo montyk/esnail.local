@@ -7,8 +7,8 @@
         <thead>
         <tr>
             <th>#</th>
+            <th>Date</th>
             <th>Subject</th>
-            <th>Description</th>
             <th>User</th>
             <th>From</th>
             <th>To</th>
@@ -23,12 +23,12 @@
         <?php foreach ($mails as $mail) { ?>
             <tr>
                 <td><?= $mail->id; ?></td>
-                <td><?= $mail->subject; ?></td>
-                <td class="mailDescription"><div><?= $mail->description; ?></div></td>
+                <th><?= $mail->created_at; ?></th>
+                <td><a href="/admin/mail/view/<?= $mail->id; ?>"><?= $mail->subject; ?></a></td>
                 <td class="mailUser"><?= $mail->user->firstname . ' ' . $mail->user->lastname. ' &lt;' . $mail->user->username . '&gt;'; ?></td>
                 <td><?= $mail->from; ?></td>
                 <td><?= $mail->to; ?></td>
-                <td><?= $mail->kind; ?></td>
+                <td><?= ($mail->kind == 'p') ? 'Parcel' : 'Mail'; ?></td>
                 <th><a href="/admin/mail/archive/<?= $mail->id; ?>"><?= $mail->archived; ?></a></th>
                 <th><a href="/admin/mail/hold/<?= $mail->id; ?>"><?= $mail->held; ?></a></th>
                 <th><a href="/admin/mail/deliver/<?= $mail->id; ?>"><?= $mail->delivered; ?></a></th>

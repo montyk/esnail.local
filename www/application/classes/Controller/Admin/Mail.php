@@ -26,7 +26,10 @@ class Controller_Admin_Mail extends Controller_Admin
 
     public function action_view()
     {
-        $this->template->content = View::factory('admin/mail/view');
+        $this->template->content = View::factory('admin/mail/view')
+            ->bind('mail', $mail);
+
+        $mail = ORM::factory('Mail', $this->request->param('id'));
     }
 
     public function action_create()

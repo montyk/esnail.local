@@ -29,6 +29,14 @@ class Controller_Client_Mail extends Controller_Client
         ORM::factory('Mail', $this->request->param('id'))->trigger_deliver();
         Controller::redirect('/client/mail');
     }
+
+    public function action_view()
+    {
+        $this->template->content = View::factory('client/mail/view')
+            ->bind('mail', $mail);
+
+        $mail = ORM::factory('Mail', $this->request->param('id'));
+    }
 }
 
 

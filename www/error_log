@@ -1,0 +1,13 @@
+[20-Jul-2014 16:30:16 America/Chicago] PHP Fatal error:  Class 'Auth_Orm' not found in /home/esnail/public_html/modules/auth/classes/Kohana/Auth.php on line 37
+[20-Jul-2014 16:31:03 America/Chicago] PHP Fatal error:  Class 'Auth_Orm' not found in /home/esnail/public_html/modules/auth/classes/Kohana/Auth.php on line 37
+[20-Jul-2014 16:32:09 America/Chicago] PHP Fatal error:  Class 'Auth_Orm' not found in /home/esnail/public_html/modules/auth/classes/Kohana/Auth.php on line 37
+[21-Jul-2014 09:50:45 America/Chicago] PHP Fatal error:  Call to undefined method Database_MySQL_Result::count_all() in /home/esnail/public_html/application/views/client/mail/index.php on line 5
+[21-Jul-2014 09:51:07 America/Chicago] PHP Fatal error:  Call to undefined method Database_MySQL_Result::find_all() in /home/esnail/public_html/application/views/client/mail/index.php on line 15
+[21-Jul-2014 09:55:58 America/Chicago] PHP Fatal error:  Class 'Model_role' not found in /home/esnail/public_html/modules/orm/classes/Kohana/ORM.php on line 46
+[21-Jul-2014 09:56:04 America/Chicago] PHP Fatal error:  Class 'Model_role' not found in /home/esnail/public_html/modules/orm/classes/Kohana/ORM.php on line 46
+[21-Jul-2014 09:56:05 America/Chicago] PHP Fatal error:  Class 'Model_role' not found in /home/esnail/public_html/modules/orm/classes/Kohana/ORM.php on line 46
+[21-Jul-2014 09:57:52 America/Chicago] PHP Parse error:  syntax error, unexpected '?>' in /home/esnail/public_html/application/views/admin/user/index.php on line 31
+[21-Jul-2014 09:58:10 America/Chicago] PHP Parse error:  syntax error, unexpected '?>' in /home/esnail/public_html/application/views/admin/user/index.php on line 31
+[21-Jul-2014 09:58:30 America/Chicago] PHP Parse error:  syntax error, unexpected '?>' in /home/esnail/public_html/application/views/admin/user/index.php on line 31
+[21-Jul-2014 09:59:04 America/Chicago] PHP Fatal error:  Class 'Model_role' not found in /home/esnail/public_html/modules/orm/classes/Kohana/ORM.php on line 46
+[21-Jul-2014 13:05:16 America/Chicago] PHP Fatal error:  Class 'Model_role' not found in /home/esnail/public_html/modules/orm/classes/Kohana/ORM.php on line 46

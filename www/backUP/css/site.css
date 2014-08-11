@@ -1,0 +1,948 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+background: #375d81;
+background-image: linear-gradient(bottom, rgb(28,48,65) 0%, rgb(55,93,129) 64%);
+background-image: -o-linear-gradient(bottom, rgb(28,48,65) 0%, rgb(55,93,129) 64%);
+background-image: -moz-linear-gradient(bottom, rgb(28,48,65) 0%, rgb(55,93,129) 64%);
+background-image: -webkit-linear-gradient(bottom, rgb(28,48,65) 0%, rgb(55,93,129) 64%);
+background-image: -ms-linear-gradient(bottom, rgb(28,48,65) 0%, rgb(55,93,129) 64%);
+
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(28,48,65)),
+	color-stop(0.64, rgb(55,93,129))
+);
+
+	font-family: 'Droid Serif', Tahoma, Arial, sans-serif;
+	font-size: 14px;
+	letter-spacing: .2px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* After reset */
+
+html {
+	min-height: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+input {
+	font-size: 14px;	
+}
+
+
+strong {
+	font-weight: bold;
+}
+.wrapper {
+	width: 960px;
+	margin: 0 auto;	
+}
+
+.header {
+	color: #fff;	
+}
+
+	.logo {
+		float: left;
+		margin-top: -20px;
+	}
+
+.topbar {
+	width: 100%;
+	height: 5px;	
+	height: 36px;
+	color: #000;
+	text-align: right;
+}
+
+	.topbar p{
+		padding: 5px;	
+	}
+
+	.topbar-items li {
+		float: right;
+		background: #fff;
+		padding: 7px 10px;	
+		margin-left: 10px;
+		font-size: 13px;
+	}
+
+	.topbar-items li a {
+		text-decoration: none;
+		color: #000;
+	}
+
+		#login-button {
+			padding-bottom: 15px;	
+		}
+
+		#register-button {
+			background: #fe491c;
+			background-image: linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -o-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -moz-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -webkit-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -ms-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0.01, rgb(252,131,101)),
+				color-stop(0.66, rgb(254,73,28))
+			);	
+		border-bottom-left-radius: 7px;
+		border-bottom-right-radius: 7px;			
+		width: 185px;	
+		}
+			li#register-button a {
+				color: #fff;
+			}
+
+		#register-button:hover {
+			background: #DE2C00;	
+		}
+
+	.login-box {
+		float: right;
+		width: 325px;
+		background: #fff;
+		color: #000;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;		
+	}
+			
+		.login-box p {
+			text-align: right;
+			margin-bottom: 10px;
+			margin-right: 20px;
+		}
+			
+		.login-box a {
+			color: #000;
+			padding: 5px;
+			font-size: 13px;
+			text-decoration: none;
+		}
+			
+		.login-table {
+			margin: 10px auto;
+			width: 280px;
+			font-size: 12px;
+		}
+		
+			.login-table td {
+				padding: 3px;	
+			}
+			
+			.login-table td:first-child {
+				text-align: right;	
+				width: 120px;
+			}
+			
+			.login-table td:last-child {
+				text-align: right;
+				width: 140px;
+			}
+			
+			.login-table input[type="text"], .login-table input[type="password"] {
+				font-size: 12px;
+				padding: 2px;
+				width: 140px;
+			}
+			
+			.login-table input[type="submit"] {
+				background: #eff2fd;
+				color: #002344;
+				width: 130px;
+				border: 1px solid #002344;
+				padding: 3px;
+				cursor: pointer;
+			}
+			
+				.login-table input[type="submit"]:hover {
+					color: #de2c00;	
+				}
+
+	#menu {
+		width: 100%;	
+		margin-top: 20px;
+	}
+	
+		#menu ul {			
+			width: 980px;
+			list-style-type:none;	
+			margin-left: 30px;
+		}
+		
+		#menu li {
+			display: inline;
+			background: #375d81;
+			float: left;
+			width: 150px;
+			margin: 0;
+			text-align: center;
+			border: 1px solid #bbb;
+			border-right: none;
+			border-bottom: none;
+			font-size: 14px;
+			/* The gradient for the menu items */
+			background-image: linear-gradient(top, rgb(55,93,129) 1%, rgb(18,64,107) 66%);
+			background-image: -o-linear-gradient(top, rgb(55,93,129) 1%, rgb(18,64,107) 66%);
+			background-image: -moz-linear-gradient(top, rgb(55,93,129) 1%, rgb(18,64,107) 66%);
+			background-image: -webkit-linear-gradient(top, rgb(55,93,129) 1%, rgb(18,64,107) 66%);
+			background-image: -ms-linear-gradient(top, rgb(55,93,129) 1%, rgb(18,64,107) 66%);
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0.01, rgb(55,93,129)),
+				color-stop(0.66, rgb(18,64,107))
+			);
+		
+		-webkit-transition: all .1s;
+		-moz-transition: all .1s;
+		-o-transition: all .1s;
+		transition: all .1s;				
+		}
+		
+			#menu li a {
+				color: #fff;
+				display: block;
+				text-decoration: none;
+				padding: 7px 5px;				
+			}
+			
+				#menu li:hover {
+					background: #fff;
+				}
+				
+					#menu li:hover a {
+						color: #002344;	
+					}
+			
+			#menu li.active-link {
+				background: #fff;			
+			}
+			
+				#menu li.active-link a {
+					color: #000;
+				}
+				
+			#menu li.last-child {
+				border-right: 1px solid #999;
+			}
+			
+.content {
+	padding: 0;
+	color: #002344;
+}
+
+.left {
+	float: left;
+	width: 640px;	
+}
+
+.right {
+	float: right;
+	width: 300px;
+	margin-top: 10px;
+}
+
+	.content .wrapper {
+		padding: 10px 30px 20px 30px;
+			background: url(../img/content-bg.png) center top repeat-y;
+	}
+
+.content-box {
+	box-shadow: 0px 1px 5px 0px #4a4a4a;
+	border-radius: 3px;
+	background: #fff;	
+}
+
+	h1 {
+		font-weight: bold;
+		font-size: 26px;
+		color:	#002344;
+	}
+
+	.process-container {
+		float: left;
+		width: 630px;
+		margin-bottom: 80px;
+	}
+	
+	.slider-caption {
+		display: none;
+	}
+	
+	.theme-default #process {
+		margin: 10px auto 0 auto;
+		border: 1px solid #999;
+		border-radius: 5px;
+		width:630px; /* Make sure your images are the same size */
+		height:330px; /* Make sure your images are the same size */
+	}
+
+	.testimonials-container {
+		width: 630px;
+	}
+	
+	.testimonials-box {
+		border: 1px solid #999;
+	}
+	
+	.testimonials-table tr:hover td {
+		background: #EFF2FD;
+	}
+	
+	.testimonials-table tr:last-child td{
+		background: #375D81;
+		text-align: center;
+		padding: 7px;	
+	}
+	
+		.testimonials-table tr:last-child td a {
+			color: #fff;
+			text-decoration: none;	
+			display: block;
+		}
+	
+	.testimonials-table td {
+		vertical-align: top;
+		padding: 10px;		
+	}
+	
+		.testimonials-table td h2 {
+			font-weight: bold;
+			font-size: 15px;
+			margin-left: 0;
+			margin-bottom: 15px;
+		}
+		
+		.testimonials-table td p {
+			line-height: 1.3;	
+		}
+	
+	.plans-container {
+		float: right;
+		width: 300px;
+	}
+	
+		.plans-box {
+			color: #002344;
+			margin: 0 auto;
+			border: 1px solid #999;
+			background: #fff;
+			width: 300px;	
+			font-size: 12px;
+		
+		}
+		
+		.plans-box ul {
+			width: 250px;
+			margin: 10px 0;
+			list-style-type:circle;
+			margin-left: 30px;
+		}
+		
+			.plans-box ul li {
+				margin-top: 7px;
+			}
+		
+		.content-box h1, .content-box h2, .login-box h2 {
+			font-size: 20px;
+			margin: 8px 0 0 8px;
+			font-weight: bold;
+		}
+		
+		.content-box h1 {
+			font-size: 24px;
+		}
+		
+		.order-button {
+			text-decoration: none;
+			font-size: 14px;
+			min-width: 150px;
+			border: 0;
+			color: #fff;
+			padding: 3px 35px;
+			border-radius: 2px;
+			background: #fe491c;
+			background-image: linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -o-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -moz-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -webkit-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -ms-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0.01, rgb(252,131,101)),
+				color-stop(0.66, rgb(254,73,28))
+			);			
+		}
+		
+			.order-button:hover {
+				cursor: pointer;
+				background: #de2c00;	
+			}
+		
+		.plans-box .order-button {
+			margin: 0 0 0 80px;	
+		}
+				
+		.plans-table .order-button {
+			margin-left: 0;
+			padding: 3px 10px;
+		}
+		.plans-button-all {
+			background: #375D81;
+			padding-top: 6px;
+			height: 22px;
+			width: 300px;
+			text-align: center;
+			font-size: 15px;
+		}
+		
+			.plans-button-all a {
+				color: #fff;
+				text-decoration: none;
+				font-size: 13px;
+			}
+	
+	  .paypal-box {
+		padding: 0 5px 15px 0;
+		margin-top: 90px;
+		text-align: center;  
+	  }
+
+	  .offer-box {
+	  	margin-top: 20px;
+	  }
+			
+	  .entries-container {
+		  width: 630px;	
+		  margin: 50px 0 15px 0;
+	  }
+	  
+	  	.entries-box {
+			background: #fff;
+			padding: 7px;
+			margin-top: 15px;
+			font-size: 13px;	
+			border: 1px solid #999;
+		}
+		
+			.entries-single h2, .faq-home-box h2 {
+				font-weight: bold;
+				font-size: 16px;
+				margin: 15px 0;
+			}
+			
+			.entries-single {
+				margin: 15px 0;
+				clear: both;
+			}
+			
+			.entries-single .single-entry-date {
+				float: left;
+				height: 100px;
+				width: 180px;
+				text-align: right;
+				margin-right: 10px;
+				font-size: 11px;
+			}
+			
+			.entries-single p, .faq-home-box p {
+				line-height: 1.5;	
+			}
+			
+		.entries-box hr, .faq-home-container hr {
+			margin: 15px 0;
+		}
+		
+	.faq-home-container {
+		width: 630px;
+		margin-top: 50px;
+	}
+	
+		.faq-home-box {
+			background: #fff;
+			padding: 7px;
+			font-size: 13px;
+			margin-top: 15px;
+			border: 1px solid #999;
+		}
+		
+	.entries-button-all, .faq-home-button-all {
+		background: #375D81;	
+		width: 614px;
+		padding: 7px;
+		margin: 0 0 -7px -7px;
+		text-align: center;
+	}
+	
+		.entries-button-all a, .faq-home-button-all a {
+			color: #fff;
+			text-decoration: none;
+			display: block;
+		}
+
+.pre-footer {
+	padding: 20px 0 0 0;
+}
+
+	.pre-footer .wrapper {
+/*		background: #2C4B67; */
+		padding: 15px 30px 0 15px;
+	}
+
+	.triangle-decoration-prefooter {
+		width: 100%;
+		height: 16px;
+		margin-top: 50px;
+		background: url(../img/triangle_up.png) repeat-x;	
+	}
+	
+	.triangle-decoration-footer {
+		width: 100%;
+		height: 16px;
+		background: url(../img/triangle_up_2.png) repeat-x;			
+	}
+
+	.pre-footer a {
+		color: #fff;	
+		text-decoration: none;
+		display: block;
+		font-size: 13px;
+	}
+	
+		.pre-footer h1 {
+			color: #fff;
+		}
+
+		.pre-footer h3 {
+			width: 120px;
+			line-height: 1.4;
+		}
+
+	.service {
+		opacity:.7;
+		float: left;
+		margin-bottom: 20px;
+	}
+	
+		.service:hover {
+			opacity: 1;	
+		}
+
+	.service img {
+		border: 1px solid #EFF2FD;
+		padding: 2px;
+		margin: 15px 45px 5px 0;		
+	}
+	
+		.service img.last {
+			margin-right: 0;
+		}
+	
+.footer {
+	padding: 20px 0;	
+	color: #999;
+}
+
+	.footer .wrapper {
+		padding: 20px 30px;
+			border-top: 1px solid #375D81;
+	}
+
+	#footer-contacts {
+		float: right;
+	}
+	
+		#footer-contacts p {
+			color: #fff;	
+			text-align: right;	
+			font-size: 14px;
+		}
+	
+	#footer-links {
+		padding-top: 25px;
+		font-size: 14px;	
+	}
+	
+	#footer-links a {
+		color: #f8f8f8;
+		text-decoration: none;	
+	}
+	
+		#footer-links a:hover {
+			text-decoration: underline;
+			color: #fff;
+		}
+		
+.plans-page-box, .faq-page-box, .security-page-box, .about-page-box, .privacy-page-box, .how-page-box, .blog-page-box, .support-page-box {
+	padding: 10px;
+	margin: 20px 0;	
+}
+
+	.plans-page-box p, .security-page-box p, .about-page-box p, .how-page-box p, .faq-page-box p, .blog-page-box p, .support-page-box p {
+		padding: 10px;
+		line-height: 1.5;
+	}
+	
+	p a {
+		text-decoration: none;
+	}
+	
+	p a:hover {
+		text-decoration: underline;
+	}
+	
+	.support-page-box label {
+		display: block;
+	}
+	
+	.support-page-box input[type="text"] {
+		width: 200px;
+		margin-bottom: 10px;
+		padding: 3px;
+	}
+	
+	.support-page-box textarea {
+		margin-bottom: 7px;
+	}
+	
+	.support-page-box #supportMessage {
+		float: right;
+		margin: 13px 25px 15px 0;
+	}
+	
+	.plans-table {
+		width: 900px;
+		margin: 15px auto;	
+	}
+	
+		.plans-table td {
+			text-align: center;
+			padding: 15px 10px;
+			line-height: 1.5;
+			vertical-align: top;
+			width: 180px;
+		}
+	
+		.plans-table tr:first-child td {
+			font-size: 17px;
+			font-weight: bold;
+			border-top: 1px solid #eeeeee;
+		}
+		
+		.plans-table tr.plan-description td {
+			font-size: 13px;
+			text-align: left;
+		}
+		
+			.plans-table tr.plan-description .plan-4 {
+				font-size: 12px;	
+			}
+		
+		.plans-table td {
+			border: 1px solid #eeeeee;
+			border-top: none; border-bottom: none;
+		}
+		
+		.plans-table tr:last-child td {
+			border-bottom: 1px solid #eeeeee;
+		}
+
+		.plans-table tr td:first-child {
+			min-width: 70px;
+			font-size: 12px;
+			border-top: none; border-bottom: none;
+		}		
+		
+		.plans-table tr.plan-prices td{
+			font-weight: bold;
+		}
+		
+		.plans-table td:first-child {
+			border: none;
+			font-weight: normal !important;
+		}
+		
+		.plans-order-button {
+			border-radius: 2px;
+			color: #fff;
+			padding: 5px;
+			border: none;
+			width: 130px;
+			background-image: linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -o-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -moz-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -webkit-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -ms-linear-gradient(top, rgb(252,131,101) 1%, rgb(254,73,28) 66%);
+			background-image: -webkit-gradient(
+				linear,
+				left top,
+				left bottom,
+				color-stop(0.01, rgb(252,131,101)),
+				color-stop(0.66, rgb(254,73,28))
+			);	
+		}
+		
+		.plans-order-button:hover {
+			cursor: pointer;
+			background: #de2c00;
+		}
+		
+		#business-info a {
+		 font-size: 12px;
+		 color: #de2c00;
+		 text-decoration: none;	
+		}
+		
+.plans-page-box h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 10px;
+}
+
+	.plans-page-box ul {
+		list-style-type:circle;
+		padding-left: 30px;
+	}
+	
+		.plans-page-box li {
+			margin: 10px 0;	
+			font-size: 13px;
+		}
+		
+.legend {
+	font-size: 11px;	
+}
+
+.faq-page-box ul {
+	list-style-type:circle;
+}
+
+.faq-page-box ol {
+	list-style-type: decimal;	
+}
+
+.faq-page-box ul, .faq-page-box ol {
+	margin-left: 30px;
+}
+
+	.faq-page-box ul li, .faq-page-box ol li {
+		margin-top: 8px;
+	}
+	
+		.faq-page-box ul li a, .faq-page-box ol li a {
+			color: #002344;
+			text-decoration: none;	
+		}
+		
+.faq-page-box .question {
+	font-weight: bold;
+	font-size: 15px;
+	margin-bottom: 3px;	
+}
+
+.faq-page-box .answer {
+	line-height: 1.5;
+}
+
+	.faq-page-box .address {
+		font-size: 16px;
+		margin: 5px 0 0 10px;	
+		line-height: 1.8;
+	}
+	
+.security-page-box h3, .privacy-page-box h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.security-table {
+	margin: 10px 0;	
+}
+
+.security-table td {
+	vertical-align:top;	
+	padding: 20px 20px;
+	border-bottom: 1px solid #eee;
+}
+	.security-table tr td:first-child {
+		padding-top: 50px;	
+	}
+
+	.security-table tr:hover td {
+		background: #f8f8f8;
+	}
+
+	.security-table td p {
+		line-height: 1.5;
+		padding: 5px 0;
+		font-size: 13px;
+	}
+	
+.privacy-page-box h1 {
+	
+}
+
+.privacy-page-box h3 {
+	padding: 30px 5px 5px 10px;
+}
+
+	.privacy-page-box p {
+		font-size: 13px;
+		line-height: 1.5;
+		padding: 5px 10px;
+	}
+	
+.address {
+	line-height: 1;
+}
+
+.how-page-box .wrap {
+	width: 70%;
+	margin: 0 auto;
+}
+
+table.how {
+	width: 100%;
+}
+
+table.how tr:first-child td {
+	border-top: 1px solid #eee;
+}
+
+table.how td {
+	padding: 20px 10px;
+	line-height: 24px;
+	border-bottom: 1px solid #eee;
+}
+
+table.how tr:hover td {
+	background: #f8f8f8;
+}
+
+table.how td.text {
+	vertical-align: top;
+}
+
+table.how td.number {
+	width: 3%;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.allCaps li, .allCaps {
+	text-transform:uppercase;
+}
+
+h3.allCaps {
+	text-transform:uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 20px 5px 0 10px;
+}
+
+.faq-page-box .question {
+	padding-bottom: 0;
+}
+
+.blog-page-box .single-entry-date {
+	margin: 0 20px 0 0;
+}
+
+.blog-page-box .single-entry-text {
+	width: 740px;
+	float: right;
+}
+
+.blog-page-box .single-entry-text p {
+	line-height: 1.8;
+	font-size: 14px;
+}
+
+#register-table {
+	margin: 10px;
+}
+
+	#register-table td{
+		padding: 3px 0;
+	}
+
+.subsectionTitle {
+	padding-top: 15px !important;
+	font-weight: bold;
+}
+
+#plans-info {
+	padding: 0 5px;
+}
+
+.testimonials-page-box img {
+	width: 920px;	
+}
+
+.registerStep2 {
+	display: none;
+}

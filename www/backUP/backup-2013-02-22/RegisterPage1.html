@@ -1,0 +1,191 @@
+<?php
+require_once('recaptchalib.php');
+$privatekey = "...";
+$resp = recaptcha_check_answer ($privatekey,
+$_SERVER["REMOTE_ADDR"],
+$_POST["recaptcha_challenge_field"],
+$_POST["recaptcha_response_field"]);
+if (!$resp- is_valid) {
+die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." .
+"(reCAPTCHA said: " . $resp- error . ")");
+}
+?>
+
+<?php
+session_start();
+
+if(isset($_SESSION['submitted_form_values'])){extract($_SESSION['submitted_form_values']);}
+
+?>
+<html>
+<head>
+<title>eSnail.ca - Registration Page 2</title>
+ <!-- Link to CSS stylesheet -->
+ <link href="styles.css"  rel="stylesheet" type="text/css" />
+  <script type="text/javascript"  src="javascript.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- Address Bar Icon Link -->
+
+<STYLE TYPE="text/css">
+<!--
+H2
+   {
+   color:black;
+   font-size:14pt;
+   font-style:bold;
+      }
+H3
+   {
+   color:black;
+   font-size:10pt;
+   text-align:right
+      }
+H4
+   {
+   color:black;
+   font-size:12pt;
+   text-align:right
+      }
+-->
+</STYLE>
+<link REL=”SHORTCUT ICON” HREF=”favicon.ico”>
+<style type="text/css">
+a { text-decoration:none }
+</style>
+</head>
+<center>
+<script language="JavaScript">
+function checkForm(){if(!confirm('Are you sure that you want to submit the form now?'))return false;}
+</script>
+<center>
+<body bgcolor="#b0c0f0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"  link="#000000" vlink="#000000" alink="#000000">
+
+
+<!-- ImageReady Slices (eSnail Order Form 1024x.psd) -->
+<font face="Verdana">
+<table id="Table_01" width="1024" height="881" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td colspan="10" height="143" align="right" valign="top" style="background-image: url('registerpage1_01.jpg');">
+      <p>&nbsp;</p><h2><FONT FACE="rockwell"><strong>  <a href="index.html">HOME</a> |<a href="RegisterPage1.php"> SIGN UP</a> | ABOUT | CONTACT US </strong></h2>
+			</td>
+	</tr>
+	<tr>
+		<td colspan="3" rowspan="2">
+			<a href="index.html"><img src="registerpage1_02.jpg" BORDER="0" width="335" height="202" alt=""></a></td>
+		<td>
+			<a href="RegisterPage1.php"><img src="registerpage1_03.jpg" BORDER="0" width="137" height="85" alt=""></a></td>
+		<td>
+			<img src="registerpage1_04.jpg" width="110" height="85" alt=""></td>
+		<td>
+			<a href="faq.html"><img src="registerpage1_05.jpg" border="0" width="92" height="85" alt=""></a></td>
+		<td>
+			<img src="registerpage1_06.jpg" width="150" height="85" alt=""></td>
+		<td colspan="2">
+			<img src="registerpage1_07.jpg" width="155" height="85" alt=""></td>
+		<td rowspan="2">
+			<img src="registerpage1_08.jpg" width="45" height="202" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="6">
+			<img src="registerpage1_09.jpg" width="644" height="117" alt=""></td>
+	</tr>
+	<tr>
+		<td colspan="2" style="background-image: url('registerpage1_10.jpg');"></td>
+		<td colspan="6" bgcolor=#6b88c7>
+			   
+          
+            </center>
+<img src="knowyou.gif">
+<p>&nbsp;</p>
+<left>
+<table>
+<tr><td width="30%"></td><td>
+<FONT FACE="rockwell">
+<p>&nbsp;</p>
+<form action="formtoemailpro.php" method="post" onSubmit="return checkForm();">
+<?php
+require_once('recaptchalib.php');
+$publickey = "6Le0UgoAAAAAAKQ26bo0oix4CSH8HsOnMO8tBgTB";
+echo recaptcha_get_html($publickey);
+?>
+<table border="0" style="background:#6b88c7" cellspacing="5">
+<tr><td>First Name: *</td><td><input type="text" size="25" name="firstname"></td></tr>
+<tr><td>Last Name: *</td><td><input type="text" size="25" name="lastname"></td></tr>
+<tr><td>Email Address:* </td><td><input type="text" size="29" name="email"></td></tr>
+<tr><td>Confirm Email:* </td><td><input type="text" size="29" name="confirmemail"></td></tr>
+<tr><td>Daytime Telephone: </td><td><input type="text" size="25" name="telephone"></td></tr>
+<tr><td>Current Street Address: </td><td><input type="text" size="29" name="addressline1"></td></tr>
+<tr><td>Address Line 2 (optional)</td><td><input type="text" size="29" name="addressline2"></td></tr>
+<tr><td>City</td><td><input type="text" size="29" name="city"></td></tr>
+<tr><td>Postal Code</td><td><input type="text" size="6" name="postalcode" maxlength="14"></td></tr>
+<tr><td valign="top">Comments</td><td><textarea name="comments" rows="6" cols="29"></textarea></td></tr>
+</table>
+<p>&nbsp;</p>
+<table border="0" style="background:#6b88c7" cellspacing="5">
+<tr><td>User Name *</td><td><input type="text" size="25" name="username"></td></tr>
+<tr><td>Password *</td><td><input type="password" size="25" name="password"></td></tr>
+<tr><td>Confirm Password *</td><td><input type="password" size="25" name="confirmpassword"></td></tr>
+<tr><td colspan="2">All your email will be encrypted using this password</td></tr>
+</table>
+<p>&nbsp;</p>
+<table border="0" style="background:#6b88c7" cellspacing="5">
+<tr><td colspan="2"><input type="checkbox" name="business"><b>&nbsp;&nbsp;&nbsp;<font size="2">I would like to register a Business name as a mail recipient at eSnail.ca</font></b></td></tr>
+<tr><td><right>Business Name:</right> </td><td><input type="text" size="30" name="businessname"></td></tr>
+<tr><td colspan="2"><b><p>&nbsp;</p><font size="2">At eSnail we like to Save you Money, did you grab a promotional code?</font></b></td></tr>
+<tr><td>Promotion Code: </td><td><input type="text" size="30" name="promotion code"></td></tr>
+<tr><td> <input type="checkbox" name="Ihavereadtheterms"><b>&nbsp;&nbsp;&nbsp;<font size="2">I Have</font>
+<tr><td><p>&nbsp;
+</p></td><table>
+<table>
+<b></b></td></tr>
+<tr><td></td></tr>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table>
+<tr><td align="right"></td><?php
+require_once('recaptchalib.php');
+$publickey = "6Le0UgoAAAAAAKQ26bo0oix4CSH8HsOnMO8tBgTB"; // you got this from the signup page
+echo recaptcha_get_html($publickey);
+?></tr> <tr><td align="right"><input type="submit" value="Subscribe"></td>
+</table>
+<p align="right"><h3>*Required field<h3></p>
+
+</right>
+</td></tr>
+</table>
+
+</td>
+		<td colspan="2" style="background-image: url('registerpage1_12.jpg');"></td>
+	</tr>
+	<tr>
+		<td style="background-image: url('registerpage1_13.jpg');">
+				</td>
+		<td colspan="9">
+			<img src="registerpage1_14.jpg" width="955" height="52" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="spacer.gif" width="69" height="1" alt=""></td>
+		<td>
+			<img src="spacer.gif" width="2" height="1" alt=""></td>
+		<td>
+			<img src="spacer.gif" width="264" height="1" alt=""></td>
+		<td>
+			<img src="spacer.gif" width="137" height="1" alt=""></td>
+		<td>
+			<img src="spacer.gif" width="110" height="1" alt=""></td>
+		<td>
+			<img src="spacer.gif" width="92" height="1" alt=""></td>
+		<td>
+			<img src="spacer.gif" width="150" height="1" alt=""></td>
+		<td>
+			<img src="spacer.gif" width="129" height="1" alt=""></td>
+		<td>
+			<img src="spacer.gif" width="26" height="1" alt=""></td>
+		<td>
+			<img src="spacer.gif" width="45" height="1" alt=""></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</body>
+</html>

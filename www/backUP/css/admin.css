@@ -1,0 +1,43 @@
+.table td.center, .table th.center {
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px 5px;
+}
+
+.table td input, .table td select {
+	margin-bottom: 0;
+}
+
+.subheader-buttons {
+	line-height: 40px;
+	margin-top: 10px;
+	text-align: right;
+}
+
+.days {
+	font-size: 12px;
+}
+
+input[type=checkbox] {
+	vertical-align: top;
+}
+
+.dataTable {
+	font-size: 12px;
+}
+
+table.table thead .sorting,
+table.table thead .sorting_asc,
+table.table thead .sorting_desc,
+table.table thead .sorting_asc_disabled,
+table.table thead .sorting_desc_disabled {
+    cursor: pointer;
+    *cursor: hand;
+}
+ 
+table.table thead .sorting { background: url('/img/datatables/sort_both.png') no-repeat center right; }
+table.table thead .sorting_asc { background: url('/img/datatables/sort_asc.png') no-repeat center right; }
+table.table thead .sorting_desc { background: url('/img/datatables/sort_desc.png') no-repeat center right; }
+ 
+table.table thead .sorting_asc_disabled { background: url('/img/datatables/sort_asc_disabled.png') no-repeat center right; }
+table.table thead .sorting_desc_disabled { background: url('/img/datatables/sort_desc_disabled.png') no-repeat center right; }

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* CSS Reset */
+  * { margin:0; padding:0; }
+body
+{
+background-image:url('body_background.jpg');
+background-repeat:repeat-x;
+} 

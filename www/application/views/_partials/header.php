@@ -22,7 +22,7 @@
         </div>
         <?php if (!Auth::instance()->logged_in()) { ?>
         <div class="login-box" id="login-box">
-            <form action="/auth/login" method="POST">
+            <form action="/auth/login/" method="POST">
                 <table class="login-table" border="0" cellspacing="0" cellpadding="0">
                     <tr>
                         <td>

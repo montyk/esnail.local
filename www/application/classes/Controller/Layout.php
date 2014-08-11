@@ -10,6 +10,7 @@
             } else {
                 parent::before();
                 $this->template->title = $this->title;
+                $this->template->alert = array();
                 $this->template->header = View::factory('_partials/header');
                 $this->template->footer = View::factory('_partials/footer');
                 $this->template->action = $this->request->action();

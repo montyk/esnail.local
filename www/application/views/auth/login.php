@@ -1,7 +1,7 @@
 
 <div class="content-box">
     <h1>Welcome to eSnail.ca</h1>
-    <form method="post" accept-charset="utf-8">
+    <form method="post" action="/auth/login/" accept-charset="utf-8">
         <table id="register-table">
             <tr>
                 <td><label for="username1">Username:</label></td>

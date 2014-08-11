@@ -18,7 +18,6 @@
 </head>
 <body class='front'>
     <?php echo $header; ?>
-
     <div class="container">
         <?php echo $content; ?>
     </div>

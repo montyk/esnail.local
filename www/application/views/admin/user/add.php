@@ -3,7 +3,7 @@
 </div>
 <p class="lead">Add new user</p>
 
-<form action="/admin/user/create" method="post" class="form-horizontal" role="form">
+<form action="/admin/user/create/" method="post" class="form-horizontal" role="form">
     <div class="form-group">
         <label for="firstname" class="col-sm-2 control-label">Firstname</label>
         <div class="col-sm-10">

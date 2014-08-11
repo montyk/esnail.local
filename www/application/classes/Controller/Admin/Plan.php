@@ -55,8 +55,8 @@ class Controller_Admin_Plan extends Controller_Admin {
                 $this->alert['message'] = 'There were errors, please see form below';
                 $this->alert['errors'] = $e->errors('models');
             }
-            Controller::redirect('/admin/plan');
         }
+        Controller::redirect('/admin/plan');
     }
 
     public function action_delete()

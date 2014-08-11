@@ -1,7 +1,7 @@
 <div class="content-box">
     <h1>Start your eSnail.ca account</h1>
 
-    <form action="/auth/register" method="post">
+    <form action="/auth/register/" method="post">
         <table id="register-table">
             <tr>
                 <td colspan="3" class="subsectionTitle">We would like to get to know you!</td>

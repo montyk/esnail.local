@@ -3,7 +3,7 @@
 </div>
 <p class="lead">Add new plan</p>
 
-<form action="/admin/plan/create" method="post" class="form-horizontal" role="form">
+<form action="/admin/plan/create/" method="post" class="form-horizontal" role="form">
     <div class="form-group">
         <label for="name" class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">

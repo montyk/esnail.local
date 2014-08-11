@@ -3,7 +3,7 @@
 </div>
 <p class="lead">Add new mail</p>
 
-<form action="/admin/mail/create" method="post" class="form-horizontal" role="form">
+<form action="/admin/mail/create/" method="post" class="form-horizontal" role="form">
     <div class="form-group">
         <label for="from" class="col-sm-2 control-label">From</label>
         <div class="col-sm-10">

@@ -7,7 +7,7 @@ class Model_User extends ORM
         'mails' => array(),
         'business' => array(),
         'user_tokens' => array('model' => 'user_token'),
-        'roles' => array('model' => 'role', 'through' => 'roles_users'),
+        'roles' => array('model' => 'Role', 'through' => 'roles_users'),
     );
 
     protected $_has_one = array(
@@ -93,7 +93,6 @@ class Model_User extends ORM
         if (empty($values['password'])) {
             unset($values['password'], $values['password_confirm']);
         }
-
 
         $extra_validation = Model_User::get_password_validation($values);
         return $this->values($values, $expected)->update($extra_validation);

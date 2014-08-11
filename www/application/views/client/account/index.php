@@ -1,7 +1,7 @@
 <div class="content-box">
     <h1>Account settings</h1>
 
-    <form action="/client/account/update" method="post">
+    <form action="/client/account/update/" method="post">
         <table id="register-table">
             <tr>
                 <td><label for="firstName">First Name: </label></td>

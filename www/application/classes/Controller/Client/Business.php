@@ -6,7 +6,7 @@ class Controller_Client_Business extends Controller_Client {
         ->bind('business', $business);
         $user = Auth::instance()->get_user();
 
-        $business = $user->business;
+        $business = $user->business->find_all();
     }
 
     public function action_new()

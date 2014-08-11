@@ -1,9 +1,9 @@
 <div class="content-box">
-    <?php if ($business->count_all() > 0) { ?>
+    <?php if (count($business) > 0) { ?>
     <h1>Your Business</h1>
         <br><br><br>
         <ul>
-            <?php foreach($business->find_all() as $b) { ?>
+            <?php foreach($business as $b) { ?>
             <li style="margin-left: 50px; margin-bottom: 10px;"><?= $b->name; ?> <a href="/client/business/delete/<?=$b->id; ?>">[ x ]</a></li>
             <?php } ?>
         </ul>
@@ -11,7 +11,7 @@
     <?php } ?>
 
     <h1>Add More Business</h1>
-    <form method="post" action="/client/business/new" accept-charset="utf-8">
+    <form method="post" action="/client/business/new/" accept-charset="utf-8">
         <table id="register-table">
             <tr>
                 <td><label for="name">Business:</label></td>

@@ -13,7 +13,7 @@ to: <?=$mail->to; ?><br><br><br>
     <a href="/admin/mail/deliver/<?= $mail->id; ?>">Set <?= $mail->delivered ? 'not' : ''; ?> delivered</a> |
     <a href="/admin/mail/delete/<?= $mail->id; ?>">delete</a>
 </p>
-<form action="/admin/file/upload" method="post" enctype="multipart/form-data">
+<form action="/admin/file/upload/" method="post" enctype="multipart/form-data">
     <div class="form-group">
         <button type="submit" class="btn btn-default col-sm-2">Upload Document</button>
         <div class="col-sm-10">

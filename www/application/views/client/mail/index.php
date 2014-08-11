@@ -1,8 +1,7 @@
 <div class="content-box">
     <h1>Mails</h1>
-
     <div class="bs-example">
-        <?php if ($mails->count_all() > 0) { ?>
+        <?php if (count($mails) > 0) { ?>
             <ul class="filter">
                 <li><a href="#">New</a></li>
                 <li><a href="#">Archived</a></li>
@@ -12,7 +11,7 @@
         <?php } ?>
         <table class="table table-hover">
             <tbody>
-            <?php foreach ($mails->find_all() as $mail) { ?>
+            <?php foreach ($mails as $mail) { ?>
                 <tr>
                     <td  class="<?=($mail->archived) ? 'archived' : ''; ?> <?=($mail->viewed) ? '' : 'new'; ?> <?=($mail->delivered) ? 'delivered' : ''; ?> <?=($mail->held) ? 'held' : ''; ?>">
                         <div class="row-block">

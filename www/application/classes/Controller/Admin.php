@@ -14,6 +14,7 @@
                 parent::before();
                 $controller = $this->request->controller();
                 $this->template->title = $this->title;
+                $this->template->alert = array();
                 $this->template->footer = View::factory('_partials/admin/footer');
                 $this->template->header = View::factory('_partials/admin/header')
                     ->bind('controller', $controller);

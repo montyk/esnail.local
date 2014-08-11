@@ -23,20 +23,23 @@ class Controller_Auth extends Controller_Layout
                 $post = $this->request->post();
                 $post['username'] = $post['email'];
 
-                $user = ORM::factory('user')->create_user(
+                $user = ORM::factory('User')->create_user(
                     $post,
                     array('firstname', 'lastname', 'email', 'password', 'promo', 'username')
                 );
-                $user->add('roles', ORM::factory('role', array('name' => 'login')));
+                $user->add('roles', ORM::factory('Role', array('name' => 'login')));
 
                 Auth::instance()->login($post['username'], $post['password']);
+                var_dump(0);
                 if (Auth::instance()->logged_in()) {
                     Controller::redirect('client/mail');
+                    var_dump(1);
                 }
             } catch (ORM_Validation_Exception $e) {
                 $this->alert['message'] = 'There were errors, please see form below';
                 $this->alert['errors'] = $e->errors('models');
             }
+
         }
         $this->template->content = View::factory('auth/register');
     }

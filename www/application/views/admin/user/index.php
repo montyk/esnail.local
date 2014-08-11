@@ -1,7 +1,7 @@
 <div class="page-header">
     <h1>Users</h1>
 </div>
-<p class="lead">Manage users <a href="/admin/user/add" class="pull-right"> + add user</a></p>
+<p class="lead">Manage users <a href="/admin/user/add/" class="pull-right"> + add user</a></p>
 <div class="bs-example">
     <table class="table table-hover">
         <thead>
